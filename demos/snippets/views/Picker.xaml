@@ -1,0 +1,26 @@
+<Picker Title="Select a monkey"
+        ItemsSource="{Binding Monkeys}"
+        ItemDisplayBinding="{Binding Name}"
+        SelectedItem="{Binding SelectedMonkey}" />
+
+<Picker Title="Keyboard Type" SelectedIndexChanged="OnPickerSelectedIndexChanged">
+    <Picker.Items>
+        <x:String>Default</x:String>
+        <x:String>Text</x:String>
+        <x:String>Chat</x:String>
+        <x:String>Url</x:String>
+        <x:String>Email</x:String>
+        <x:String>Telephone</x:String>
+        <x:String>Numeric</x:String>
+    </Picker.Items>
+</Picker>
+
+void OnPickerSelectedIndexChanged(object sender, EventArgs args)
+{
+    Picker picker = (Picker)sender;
+    int selectedIndex = picker.SelectedIndex;
+    if (selectedIndex == -1)
+        return;
+
+    string selectedItem = picker.Items[selectedIndex];
+}

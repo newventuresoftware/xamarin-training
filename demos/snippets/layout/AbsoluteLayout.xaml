@@ -1,0 +1,7 @@
+<AbsoluteLayout>
+    <Label Text="I'm centered on iPhone 4 but no other device" AbsoluteLayout.LayoutBounds="115,150,100,100" />
+    <Label Text="I'm bottom center on every device." AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All" />
+    <BoxView Color="Olive" AbsoluteLayout.LayoutBounds="1,.5, 25, 100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+    <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+    <BoxView Color="Blue" AbsoluteLayout.LayoutBounds=".5,0,100,25" AbsoluteLayout.LayoutFlags="PositionProportional" />
+</AbsoluteLayout>

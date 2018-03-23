@@ -1,0 +1,4 @@
+<ActivityIndicator IsRunning="true" />
+<ActivityIndicator Color="Red" IsRunning="true" />
+<ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}" />
+<ActivityIndicator IsRunning="{Binding Source={x:Reference page}, Path=IsBusy}" />

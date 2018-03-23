@@ -1,0 +1,7 @@
+<Switch IsToggled="True" />
+<Switch IsToggled="True" Toggled="OnBoldSwitchToggled" />
+
+void OnBoldSwitchToggled(object sender, ToggledEventArgs args)
+{
+    bool toggled = args.Value;
+}

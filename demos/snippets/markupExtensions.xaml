@@ -1,0 +1,7 @@
+{x:Static LayoutOptions.Start}
+{x:Null}
+{x:Type Color}
+{x:Reference slider}
+{Binding Path=Value, StringFormat='The angle is {0:F0} degrees', Source={x:Reference slider}}
+{StaticResource horzOptions}
+{DynamicResource horzOptions}

@@ -1,0 +1,5 @@
+<BoxView Color="CornflowerBlue"
+         WidthRequest="160"
+         HeightRequest="160"
+         VerticalOptions="Center"
+         HorizontalOptions="Center" />

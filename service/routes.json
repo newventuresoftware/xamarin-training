@@ -1,0 +1,5 @@
+{
+	"/customer/:id" : "/customers?CustomerID=:id",
+	"/product/:id" : "/products?ProductID=:id",
+	"/order/:id" : "/orders?OrderID=:id"
+}

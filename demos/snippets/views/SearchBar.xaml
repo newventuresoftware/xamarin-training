@@ -1,0 +1,18 @@
+<SearchBar Text="Xamarin" />
+<SearchBar Placeholder="Serch term" />
+<SearchBar Text="Xamarin" Placeholder="forms" TextColor="Red" PlaceholderColor="Blue" />
+<SearchBar Text="Xamarin" FontAttributes="Italic" />
+<SearchBar FontFamily="monospace" FontSize="Medium" CancelButtonColor="Gainsboro" />
+<SearchBar SearchCommand="{Binding SearchCommand}" />
+<SearchBar x:Name="searchBar" SearchCommand="{Binding SearchCommand}" SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
+<SearchBar SearchButtonPressed="SearchBarButtonPressed" TextChanged="SearchBarTextChanged" />
+
+private void SearchBarButtonPressed(object sender, EventArgs e)
+{
+
+}
+
+private void SearchBarTextChanged(object sender, TextChangedEventArgs e)
+{
+    string newText = e.NewTextValue;
+}

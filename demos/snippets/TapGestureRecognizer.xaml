@@ -1,0 +1,11 @@
+<Image Source="tapped.jpg">
+    <Image.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="2" />
+  </Image.GestureRecognizers>
+</Image>
+
+<Image Source="tapped.jpg">
+    <Image.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="Image1" />
+    </Image.GestureRecognizers>
+</Image>

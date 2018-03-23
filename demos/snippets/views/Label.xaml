@@ -1,0 +1,15 @@
+<Label Text="Hello!" FontSize="Large" FontFamily="sans-serif" />
+<Label Text="Hello!" FontSize="Large" />
+<Label Text="Hello!" FontAttributes="Bold, Italic" />
+<Label Text="Hello!" FontFamily="sans-serif" />
+<Label Text="Hello!" TextColor="Yellow" BackgroundColor="Red" />
+<Label Text="Hello!" HorizontalTextAlignment="Center" VerticalTextAlignment="End" />
+<Label>
+    <Label.FormattedText>
+        <FormattedString>
+            <Span FontSize="Medium">Hello</Span>
+            <Span Font="monospace"> Xamarin </Span>
+            <Span FontAttributes="Italic">Forms</Span>
+        </FormattedString>
+    </Label.FormattedText>
+</Label>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.XamarinForms.Primitives</name>
+    </assembly>
+    <members>
+        <member name="M:Telerik.XamarinForms.Primitives.SlideView.Commands.SlideViewCommandService.ExecuteCommand(Telerik.XamarinForms.Primitives.SlideView.Commands.SlideViewCommandId,System.Object)">
+            <summary>
+            Attempts to find the command, associated with the specified Id and to perform its Execute routine, using the provided parameter.
+            </summary>
+            <param name="id">The <see cref="!:CommandId"/> value to look for.</param>
+            <param name="parameter">The parameter that is passed to the CanExecute and Execute methods of the command.</param>
+            <returns>True if the command is successfully executed, false otherwise.</returns>
+        </member>
+        <member name="M:Telerik.XamarinForms.Primitives.SlideView.Commands.SlideViewCommandService.CanExecuteCommand(Telerik.XamarinForms.Primitives.SlideView.Commands.SlideViewCommandId,System.Object)">
+            <summary>
+            Determines whether the command, associated with the specified Id can be executed given the parameter provided.
+            </summary>
+            <param name="id">The <see cref="!:CommandId"/> value to look for.</param>
+            <param name="parameter">The parameter that is passed to the CanExecute and Execute methods of the command.</param>
+            <returns>True if the command can be executed, false otherwise.</returns>
+        </member>
+        <member name="E:Telerik.XamarinForms.Primitives.RadScrollView.TopHeaderUnloaded">
+            <summary>
+            An event needed to work around a peculiarity in UWP where the TopHeader is unloaded while being shown on screen.
+            </summary>
+        </member>
+    </members>
+</doc>

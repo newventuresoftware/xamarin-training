@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XTraining.Pages.MainPage"
+             Title="XTraining">
+    <ContentPage.Content>
+        <TableView Intent="Menu">
+            <TableView.Root>
+                <TableSection>
+                    <TextCell Text="Color creator" Command="{Binding NavigateCommand}" CommandParameter="color" />
+                    <TextCell Text="Dialer" Command="{Binding NavigateCommand}" CommandParameter="dialer" />
+                    <TextCell Text="Chart" Command="{Binding NavigateCommand}" CommandParameter="chart" />
+                    <TextCell Text="DataGrid" Command="{Binding NavigateCommand}" CommandParameter="datagrid" />
+                    <TextCell Text="List" Command="{Binding NavigateCommand}" CommandParameter="list" />
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

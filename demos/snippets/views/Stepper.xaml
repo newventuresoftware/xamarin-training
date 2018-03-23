@@ -1,0 +1,8 @@
+<Stepper Value="0.6" Minimum="0" Maximum="1" />
+<Stepper Maximum="100" Minimum="1" Value="28" />
+<Stepper Maximum="100" Minimum="1" Value="28" Increment="2" ValueChanged="OnStepperValueChanged" />
+
+void OnStepperValueChanged(object sender, ValueChangedEventArgs args)
+{
+    double newValue = args.NewValue;
+}

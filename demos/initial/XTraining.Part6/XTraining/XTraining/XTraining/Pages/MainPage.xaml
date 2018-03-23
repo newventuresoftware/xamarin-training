@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XTraining.Pages.MainPage"
+             Title="XTraining">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Color creator" Command="{Binding NavigateCommand}" CommandParameter="color" />
+            <Button Text="Dialer" Command="{Binding NavigateCommand}" CommandParameter="dialer" />
+            <Button Text="Chart" Command="{Binding NavigateCommand}" CommandParameter="chart" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

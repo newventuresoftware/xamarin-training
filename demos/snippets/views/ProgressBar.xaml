@@ -1,0 +1,4 @@
+<ProgressBar Progress="0.75" />
+<ProgressBar x:Name="progressBar" />
+
+await progressBar.ProgressTo (.8, 250, Easing.Linear);

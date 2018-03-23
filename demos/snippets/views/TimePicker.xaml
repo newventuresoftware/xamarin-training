@@ -1,0 +1,14 @@
+<TimePicker Time="20:30" />
+<TimePicker Format="HH:mm" />
+<TimePicker TextColor="Red" />
+<TimePicker Time="{Binding AlarmTime}" />
+<TimePicker PropertyChanged="OnTimePickerPropertyChanged" />
+
+void OnTimePickerPropertyChanged(object sender, PropertyChangedEventArgs args)
+{
+    if (args.PropertyName == "Time")
+    {
+        TimePicker picker = sender as TimePicker;
+        TimeSpan newTime = picker.Time;
+    }
+}

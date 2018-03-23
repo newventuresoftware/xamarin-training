@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XTraining.Pages.DataGridPage"
+             Title="DataGrid">
+    <ContentPage.Content>
+        <telerikGrid:RadDataGrid ItemsSource="{Binding Orders}" AutoGenerateColumns="False" >
+            <telerikGrid:RadDataGrid.Columns>
+                <telerikGrid:DataGridTextColumn PropertyName="CustomerID" />
+                <telerikGrid:DataGridNumericalColumn PropertyName="OrderID" IsVisible="False" />
+                <telerikGrid:DataGridDateColumn PropertyName="OrderDate" CellContentFormat="{}{0:MM/dd/yyyy}" />
+                <telerikGrid:DataGridDateColumn PropertyName="RequiredDate" CellContentFormat="{}{0:MM/dd/yyyy}" IsVisible="False" />
+                <telerikGrid:DataGridDateColumn PropertyName="ShippedDate" CellContentFormat="{}{0:MM/dd/yyyy}" IsVisible="False" />
+                <telerikGrid:DataGridNumericalColumn PropertyName="EmployeeID" IsVisible="False" />
+                <telerikGrid:DataGridNumericalColumn PropertyName="Freight" />
+                <telerikGrid:DataGridTextColumn PropertyName="ShipCountry" IsVisible="False" />
+                <telerikGrid:DataGridTextColumn PropertyName="ShipRegion" IsVisible="False" />
+                <telerikGrid:DataGridTextColumn PropertyName="ShipCity" IsVisible="False" />
+                <telerikGrid:DataGridTextColumn PropertyName="ShipAddress" IsVisible="False" />
+            </telerikGrid:RadDataGrid.Columns>
+        </telerikGrid:RadDataGrid>
+    </ContentPage.Content>
+</ContentPage>

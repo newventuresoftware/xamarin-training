@@ -1,0 +1,19 @@
+<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+
+<OnPlatform x:TypeArguments="x:String" iOS="Icon-Small-40.png" Android="icon.png" WinPhone="Assets/StoreLogo.png" />
+
+<OnPlatform x:TypeArguments="Thickness">
+    <On Platform="iOS" Value="20, 40, 20, 20" />
+    <On Platform="Android" Value="20" />
+    <On Platform="UWP" Value="20" />
+</OnPlatform>
+
+<OnPlatform x:TypeArguments="Thickness">
+    <On Platform="iOS" Value="20, 40, 20, 20" />
+    <On Platform="Android, UWP" Value="20" />
+</OnPlatform>
+
+<OnPlatform x:TypeArguments="x:String">
+    <On Platform="iOS" Value="Hello iOS" />
+    <On Platform="Android, UWP" Value="Hello" />
+</OnPlatform>

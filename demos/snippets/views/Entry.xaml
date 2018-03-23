@@ -1,0 +1,19 @@
+<Entry Text="some text" />
+<Entry Text="some text" TextColor="Red" />
+<Entry Text="some text" IsPassword="True" />
+<Entry Text="some@mail.com" Keyboard="Email" />
+<Entry Placeholder="Put your text here" />
+<Entry Text="some text" FontSize="Medium" FontFamily="monospace" FontAttributes="Bold" />
+
+<Entry Text="{Binding Name}" />
+<Entry Text="some text" TextChanged="OnEntryTextChanged" Completed="OnEntryCompleted" />
+
+void OnEntryTextChanged(object sender, TextChangedEventArgs args)
+{
+
+}
+
+void OnEntryCompleted(object sender, EventArgs args)
+{
+
+}

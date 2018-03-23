@@ -1,0 +1,1218 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Telerik UI for Xamarin</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href=" css/style.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="main" data-background="./img/telerik-bg.jpg">
+                <h2 class="title">Telerik UI for Xamarin</h2>
+                <div>
+                    <img alt="" src="./img/xamarin.png" class="no-border" width="230" style="margin-bottom: -10px" />
+                    <img alt="" src="./img/telerik-ninja.png" class="no-border" width="130" style="padding-left: 50px; padding-right: 50px; margin-bottom: 25px" />
+                </div>   
+            </section>
+            <section id="speaker-and-company-info" data-background="./img/telerik-bg.jpg">
+                <section>
+                    <h3>Welcome</h3>
+                    <h4>Progress Virtual Classroom</h4>
+                    <img alt="" width="700" src="./img/virtual-academy.jpg" class="no-border" />
+                </section>
+                <section id="training-schedule">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>Date</strong></td>
+                                <td><strong>Time</strong></td>
+                                <td><strong>Course</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>February 28, 2018</td>
+                                <td>9am - 1pm EST<strong></strong></td>
+                                <td><strong>Kendo UI &amp; Angular</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 7, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for ASP.NET MVC and ASP.NET Core</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 8, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Kendo UI &amp; React</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 14, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Kendo UI &amp; jQuery</strong></td>
+                            </tr>
+                            <tr class="passed-training">
+                                <td>March 22, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Kendo UI &amp; Vue</strong></td>
+                            </tr>
+                            <tr class="current-training">
+                                <td>March 27, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for Xamarin</strong></td>
+                            </tr>
+                            <tr>
+                                <td>March 30, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for WPF</strong></td>
+                            </tr>
+                            <tr>
+                                <td>April 5, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik Reporting &amp; Telerik Report Server</strong></td>
+                            </tr>
+                            <tr>
+                                <td>April 10, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for WinForms</strong><strong></strong></td>
+                            </tr>
+                            <tr>
+                                <td>April 12, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for ASP.NET AJAX</strong><strong></strong></td>
+                            </tr>
+                            <tr>
+                                <td>April 13, 2018</td>
+                                <td>9am - 1pm EST</td>
+                                <td><strong>Telerik UI for UWP</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="speaker-info">
+                    <div class="speaker-img-container">
+                        <img alt="" src="./img/speaker.jpg" width="200" />
+                        <h4>Yavor Ivanov</h4>
+                    </div>
+                    <table class="speaker-contact-info">
+                        <tbody>
+                            <tr>
+                                <td><img alt="" class="no-border" src="./img/email.png" width="50"></td>
+                                <td style="vertical-align:middle"> <a href="mailto:yavor@newventuresoftware.com?Subject=Hello" target="_blank">yavor@newventuresoftware.com</a></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="" class="no-border" src="./img/web.png" width="50"></td>
+                                <td style="vertical-align:middle"> <a href="https://www.newventuresoftware.com/blog" target="_blank">www.newventuresoftware.com/blog</a></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="" class="no-border" src="./img/github.png" width="50"></td>
+                                <td style="vertical-align:middle"> <a href="https://github.com/yavor87" target="_blank">github.com/yavor87</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section data-background="./img/Training-intro-slide.jpg"></section>
+                <section id="nvs-partners" data-background="./img/Training-intro-slide+bullets.jpg">
+                    <aside class="notes">
+                        <h2>New Venture Software</h2>
+                        <p>Your premier consulting and professional services partner for Progress Telerik products and technologies. Trust a reliable partner who’s been instrumental in building the award-winning DevCraft suite.</p>
+
+                        <h3>Our pillars:</h3>
+                        <ol>
+                            <li>The exceptional quality of our consulting and professional services stems from a solid background and expertise in Telerik DevCraft:
+                            Benefit from being consulted by ex-Progress Telerik software architects who have led a number of teams building the Telerik DevCraft suite.</li>
+                            <li>Portfolio breadth: we support all progress Telerik products and technologies:
+                            The New Venture Software team possesses rock-solid understanding, experience and expertise in all Progress Telerik products, be it for the web, desktop or mobile.</li>
+                            <li>Successful track record of delivering future-proof software consulting and development solutions.
+                            New Venture Software has a proven record of success delivering software solutions that can transform businesses.</li>
+                        </ol>
+                    </aside>
+                </section>
+            </section>
+            <section id="agenda" class="color-white" data-background-image="./img/school-board.jpg">
+                <h3>Agenda</h3>
+                <ul>
+                    <li class="fragment">Setting up dev environment</li>
+                    <li class="fragment">Xamarin Native</li>
+                    <li class="fragment">Xamarin Forms</li>
+                    <li class="fragment">Telerik UI for Xamarin</li>
+                </ul>
+            </section>
+            <section id="setting-up">
+                <section data-background="./img/ready-to-start-org.jpg">
+                </section>
+                <section data-background="./img/Getting+Started.png">
+                    <h3>Development environment</h3>
+                    <ul class="present">
+                        <li class="fragment" data-fragment-index="0">Visual Studio</li>
+                        <li class="fragment" data-fragment-index="1">JetBrains Rider</li>
+                        <li class="fragment" data-fragment-index="2">Android SDK</li>
+                        <li class="fragment" data-fragment-index="3">Android Simulator</li>
+                        <li class="fragment" data-fragment-index="4">Access to a Mac</li>
+                    </ul>
+                </section>
+                <section data-background="./img/Getting+Started.png">
+                    <h3>Development environment</h3>
+                    <ul class="present">
+                        <li class="fragment" data-fragment-index="0">XCode</li>
+                        <li class="fragment" data-fragment-index="1">Visual Studio for Mac</li>
+                        <li class="fragment" data-fragment-index="2">JetBrains Rider</li>
+                        <li class="fragment" data-fragment-index="3">Android SDK</li>
+                        <li class="fragment" data-fragment-index="4">Android Simulator</li>
+                    </ul>
+                </section>
+                <section data-background="./img/ffa11.jpg">
+                    <h3>Simulators and SDKs</h3>
+                </section>
+                <section>
+                    <h3>Android SDK management</h3>
+                    <img alt="" class="no-border fragment" width="200" src="./img/xamarin.png" />
+                    <img alt="" class="no-border fragment" width="200" src="./img/Android_Studio_icon.png" />
+                </section>
+                <section class="present">
+                    <h3>Android Simulators</h3>
+                    <img alt="" class="no-border fragment" style="background: gray; padding-left: 10px" data-fragment-index="0" width="300" src="./img/genymobile-with-motion.svg" />
+                    <p class="fragment" data-fragment-index="1">Visual Studio Emulator for Android</p>
+                    <p class="fragment" data-fragment-index="2">Android Studio</p>
+                    <img alt="" class="no-border fragment" height="300" data-fragment-index="2" src="./img/android_simulator.png" />
+                </section>
+                <section>
+                    <h3>iOS on Windows</h3>
+                    <img alt="" class="no-border" src="./img/remote_build.png" />
+                    <aside class="notes">
+                        Visual Studio connects to the Mac over SSH, which provides several benefits, including:
+                        <ul>
+                            <li>Visual Studio can launch and control the build agent directly. There is no longer a user-visible application that requires a manual start and stop.</li>
+                            <li>The new Connection Manager in Visual Studio will discover, authenticate, and remember the Mac build host.</li>
+                            <li>Since all communication is tunneled securely via SSH, only a single port connection to port 22 is required.</li>
+                            <li>Visual Studio is notified of changes as soon as they happen. For example, when an iOS device is plugged in the toolbar will update instantly.</li>
+                            <li>Multiple instances of Visual Studio can connect simultaneously.</li>
+                            <li>The connection will not intrude on development. It will only prompt for a connection to the Mac when performing an operation for which the Mac is required, such as debugging or using the iOS Designer.</li>
+                        </ul>
+
+                        Requirements:
+                        <ul>
+                            <li>Mac</li>
+                            <li>Remote Login enabled</li>
+                            <li>Visual Studio for Mac</li>
+                        </ul>
+
+                        <a href="https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/windows/connecting-to-mac/">connecting to mac</a>
+                    </aside>
+                </section>
+            </section>
+            <section id="xamarin-intro">
+                <section>
+                    <h3>Getting started with Xamarin</h3>
+                    <img alt="" class="no-border" src="./img/mobiles.png" width="750" />
+                </section>
+                <section>
+                    <h3>Traditional approach</h3>
+                    <canvas id="canvas1" width="500" height="300"></canvas>
+                    <div style="display:none;">
+                        <img alt="" id="logo-ios" width="362" height="431" class="no-border" src="./img/apple_logo_white.png" />
+                        <img alt="" id="logo-android" width="368" height="431" class="no-border" src="./img/droid_logo_white.png" />
+                        <img alt="" id="logo-win10" width="211" height="199" class="no-border" src="./img/win10_logo_white.png" />
+                    </div>
+                    <script type="text/javascript">
+                        var canvas = document.getElementById('canvas1');
+                        var ctx = canvas.getContext('2d');
+                        ctx.fillStyle = '#AB59A2';
+                        ctx.fillRect(10, 10, 140, 280);
+
+                        ctx.fillStyle = '#7EC567';
+                        ctx.fillRect(180, 10, 140, 280);
+
+                        ctx.fillStyle = '#34BBEC';
+                        ctx.fillRect(350, 10, 140, 280);
+
+                        ctx.fillStyle = 'white';
+                        ctx.font = '20px serif';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('iOS App', 80, 100);
+                        ctx.fillText('Swift / ObjC', 80, 240);
+                        ctx.fillText('XCode', 80, 260);
+                        ctx.fillText('Android App', 250, 100);
+                        ctx.fillText('Java / Kotlin', 250, 240);
+                        ctx.fillText('Android Studio', 250, 260);
+                        ctx.fillText('UWP App', 420, 100);
+                        ctx.fillText('C# / VB', 420, 240);
+                        ctx.fillText('Visual Studio', 420, 260);
+
+                        var logo_ios = document.getElementById('logo-ios');
+                        ctx.drawImage(logo_ios, 60, 25, 40, 48);
+                        var logo_android = document.getElementById('logo-android');
+                        ctx.drawImage(logo_android, 230, 25, 40, 48);
+                        var logo_uwp = document.getElementById('logo-win10');
+                        ctx.drawImage(logo_uwp, 400, 31, 40, 35);
+                    </script>
+                </section>
+                <section>
+                    <h3>Four big obstacles</h3>
+                    <ol class="present problem-list">
+                        <li class="fragment problem">Different user-interface paradigms</li>
+                        <li class="fragment problem">Different development environments</li>
+                        <li class="fragment problem">Different platform APIs</li>
+                        <li class="fragment problem">Different programming languages</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Xamarin approach</h3>
+                    <canvas id="canvas2" width="500" height="300"></canvas>
+                    <script type="text/javascript">
+                        var canvas = document.getElementById('canvas2');
+                        var ctx = canvas.getContext('2d');
+                        ctx.fillStyle = '#3798D3';
+                        ctx.fillRect(10, 160, 480, 140);
+
+                        ctx.fillStyle = '#AB59A2';
+                        ctx.fillRect(10, 10, 140, 140);
+
+                        ctx.fillStyle = '#7EC567';
+                        ctx.fillRect(180, 10, 140, 140);
+
+                        ctx.fillStyle = '#34BBEC';
+                        ctx.fillRect(350, 10, 140, 140);
+
+                        ctx.fillStyle = 'white';
+                        ctx.font = '20px serif';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('iOS C# UI', 80, 100);
+                        ctx.fillText('Android C# UI', 250, 100);
+                        ctx.fillText('UWP C# UI', 420, 100);
+                        ctx.fillText('Shared C# Backend', 245, 230);
+
+                        var logo_ios = document.getElementById('logo-ios');
+                        ctx.drawImage(logo_ios, 60, 25, 40, 48);
+                        var logo_android = document.getElementById('logo-android');
+                        ctx.drawImage(logo_android, 230, 25, 40, 48);
+                        var logo_uwp = document.getElementById('logo-win10');
+                        ctx.drawImage(logo_uwp, 400, 31, 40, 35);
+                    </script>
+                </section>
+                <section>
+                    <h3>Native Xamarin benefits</h3>
+                    <ul class="present">
+                        <li class="fragment">One language to rule them all</li>
+                        <li class="fragment">Code sharing</li>
+                        <li class="fragment">Access to all native APIs</li>
+                        <li class="fragment">True Native UX</li>
+                        <li class="fragment">Performance close to native</li>
+                        <li class="fragment">Full hardware support</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Xamarin for Android</h3>
+                    <img alt="" class="no-border" src="./img/android_architecture.png" />
+                    <aside class="notes">
+                        <p>Assemblies contain intermediate code (IL) that is just-in-time compiled at runtime.</p>
+
+                        <p>Android callable wrappers are a JNI bridge which are used any time the Android runtime needs to invoke managed code.</p>
+
+                        <p>Managed callable wrappers are a JNI bridge which are used any time managed code needs to invoke Android code and provide support for overriding virtual methods and implementing Java interfaces. The entire Android.* and related namespaces are managed callable wrappers generated via .jar binding. Managed callable wrappers are responsible for converting between managed and Android types and invoking the underlying Android platform methods via JNI.</p>
+
+                        <a href="https://docs.microsoft.com/en-us/xamarin/android/internals/architecture">architecture</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Xamarin for iOS</h3>
+                    <img alt="" class="no-border" src="./img/iOS-arch.png" />
+                    <aside class="notes">
+                        <p>Xamarin.iOS applications run within the Mono execution environment, and use full Ahead of Time (AOT) compilation to compile C# code to ARM assembly language. This runs side-by-side with the Objective-C Runtime. Both runtime environments run on top of a UNIX-like kernel, specifically XNU, and expose various APIs to the user code allowing developers to access the underlying native or managed system.</p>
+
+                        <p>There is a security restriction on iOS, set by Apple, which disallows the execution of dynamically generated code on a device. To ensure that we adhere to these safety protocols, Xamarin.iOS instead uses an Ahead of Time (AOT) compiler to compile the managed code. This produces a native iOS binary, optionally optimized with LLVM for devices, that can be deployed on Apple’s ARM-based processor.</p>
+
+                        <p>Limitations:</p>
+                        <ul>
+                            <li>No dynamic code generation allowed</li>
+                            <li>No support for creating types dynamically</li>
+                            <li>No support for Dynamic Language Runtime (Expression trees, ExpandoObject, DynamicObject)</li>
+                        </ul>
+                        
+                        <a href="https://docs.microsoft.com/en-us/xamarin/ios/internals/limitations">limitations</a>
+
+                        <a href="https://docs.microsoft.com/en-us/xamarin/ios/internals/architecture">architecture</a>
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - Xamarin Native</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">Explore Xamarin for Android</li>
+                        <li class="fragment">Explore Xamarin for iOS</li>
+                    </ul>
+                    <aside class="notes">
+                        <em>Demonstrate app HelloXamarinNative</em>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Xamarin forms</h3>
+                    <canvas id="canvas5" width="500" height="300"></canvas>
+                    <script type="text/javascript">
+                        var canvas = document.getElementById('canvas5');
+                        var ctx = canvas.getContext('2d');
+                        ctx.fillStyle = '#3798D3';
+                        ctx.fillRect(10, 160, 480, 140);
+                        ctx.fillStyle = '#216BAB';
+                        ctx.fillRect(10, 80, 480, 70);
+
+                        ctx.fillStyle = '#AB59A2';
+                        ctx.fillRect(10, 10, 140, 60);
+
+                        ctx.fillStyle = '#7EC567';
+                        ctx.fillRect(180, 10, 140, 60);
+
+                        ctx.fillStyle = '#34BBEC';
+                        ctx.fillRect(350, 10, 140, 60);
+
+                        ctx.fillStyle = 'white';
+                        ctx.font = '20px serif';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('Shared C# Backend', 245, 230);
+                        ctx.fillText('Shared UI Code', 245, 120);
+
+                        var logo_ios = document.getElementById('logo-ios');
+                        ctx.drawImage(logo_ios, 60, 15, 40, 48);
+                        var logo_android = document.getElementById('logo-android');
+                        ctx.drawImage(logo_android, 230, 15, 40, 48);
+                        var logo_uwp = document.getElementById('logo-win10');
+                        ctx.drawImage(logo_uwp, 400, 21, 40, 35);
+                    </script>
+                </section>
+                <section class="present">
+                    <h3>Xamarin.Forms is best for:</h3>
+                    <ul>
+                        <li class="fragment">Apps that require little platform-specific functionality</li>
+                        <li class="fragment">Apps where code sharing is more important than custom UI</li>
+                        <li class="fragment">Developers comfortable with XAML</li>
+                        <li class="fragment">Data driven application</li>
+                        <li class="fragment">Tool or utility app</li>
+                        <li class="fragment">Quick prototyping</li>
+                    </ul>
+                </section>
+                <section class="present">
+                    <h3>Xamarin.Native is best for:</h3>
+                    <ul>
+                        <li class="fragment">Apps with interactions that require native behavior</li>
+                        <li class="fragment">Apps that use many platform-specific APIs</li>
+                        <li class="fragment">Apps where custom UI is more important than code sharing</li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://www.altexsoft.com/blog/mobile/the-good-and-the-bad-of-xamarin-mobile-development/" target="_blank">Altexsoft blogpost</a>
+                    </aside>
+                </section>
+                <section id="xamarin-forms-group">
+                    <div class="circle-wrapper">
+                        <div class="circle center"><strong>Xamarin forms</strong></div>
+                        <div class="circle top fragment">Native controls</div>
+                        <div class="circle top-right fragment">XAML</div>
+                        <div class="circle right fragment">Data Binding</div>
+                        <div class="circle bottom-right fragment">Styles &amp; Triggers</div>
+                        <div class="circle bottom fragment">Flexible Layout</div>
+                        <div class="circle bottom-left fragment">Navigation</div>
+                        <div class="circle left fragment">DI</div>
+                        <div class="circle top-left fragment">Custom controls</div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Sharing code</h3>
+                    <ul class="present">
+                        <li class="fragment">Shared Project</li>
+                        <li class="fragment">.Net Standard</li>
+                        <li class="fragment"><s>PCL</s></li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Shared Project</h3>
+                    <img alt="" class="no-border" src="./img/SharedAssetProject.png" />
+                    <em class="fragment">No binary output</em>
+                </section>
+                <section>
+                    <h3>.Net Standard</h3>
+                    <img alt="" class="no-border" src="./img/dotnetstandart.png" width="900" />
+                    <em class="fragment">Single class library for all platforms</em>
+                    <aside class="notes">
+                        More information: <a href="https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/" target="_blank">Microsoft blogpost</a>
+                    </aside>
+                </section>
+                <section>
+                    <img alt="" class="no-border" src="./img/netstandard-apis.png" width="800" />
+                </section>
+                <section>
+                    <h3>XAML</h3>
+<pre><code data-noescape>&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+             xmlns:local=&quot;clr-namespace:XamlSamples&quot;
+             x:Class=&quot;XamlSamples.MainPage&quot;&gt;
+
+    &lt;Label Text=&quot;Welcome to Xamarin Forms!&quot; 
+           VerticalOptions=&quot;Center&quot; 
+           HorizontalOptions=&quot;Center&quot; /&gt;
+
+&lt;/ContentPage&gt;</code></pre>
+                    <aside class="notes">
+                        Xml elements -> object elements
+                        Xml attributes -> C# property -> property attributes
+
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-basics/essential_xaml_syntax/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>XAML</h3>
+<pre><code data-noescape>&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+             xmlns:local=&quot;clr-namespace:XamlSamples&quot;
+             x:Class=&quot;XamlSamples.MainPage&quot;&gt;
+
+    &lt;Label VerticalOptions=&quot;Center&quot; 
+           HorizontalOptions=&quot;Center&quot;&gt;
+        &lt;Label.Text&gt;
+            Welcome to Xamarin Forms!
+        &lt;/Label.Text&gt;
+    &lt;/Label&gt;
+
+&lt;/ContentPage&gt;</code></pre>
+                    <aside class="notes">
+                        Xml element -> C# property -> property element
+                    </aside>
+                </section>
+                <section>
+                    <h3>Code behind</h3>
+<pre><code class="cs">using Xamarin.Forms;
+
+namespace XamlSamples
+{
+    [XamlCompilation (XamlCompilationOptions.Compile)]
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+}</code></pre>
+                    <aside class="notes">
+                        <p>XAML compiler generates the rest of the partial class in 'obj\Debug\netstandard2.0\*name*.g.cs'</p>
+                        <p>XAML can be optionally compiled directly into intermediate language (IL) with the XAML compiler (XAMLC).XAMLC offers a number of a benefits:
+                        <ul>
+                            <li>It performs compile-time checking of XAML, notifying the user of any errors.</li>
+                            <li>It removes some of the load and instantiation time for XAML elements.</li>
+                            <li>It helps to reduce the file size of the final assembly by no longer including .xaml files.</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Sizing &amp; Positioning</h3>
+                    <ul class="present">
+                        <li class="fragment">WidthRequest &amp; HeightRequest</li>
+                        <li class="fragment">HorizontalOptions &amp; VerticalOptions : <em>LayoutOptions</em></li>
+                        <li class="fragment">Margin &amp; Padding</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>LayoutOptions</h3>
+                    <img alt="" class="no-border" src="./img/alignment.png" width="900" />
+                    <aside class="notes">
+                        <p>These layout preferences can be applied to a View, relative to its parent, by setting the <b>HorizontalOption</b> or <b>VerticalOptions</b> property of the View to one of the public fields from the <b>LayoutOptions</b> structure. The <b>LayoutOptions</b> structure contains a <b>LayoutAlignment</b> and a <b>expands</b> option.</p>
+                        <p>More information: <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/layout-options" target="_blank">Xamarin documentation</a></p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Margin &amp; Padding</h3>
+                    <img alt="" class="no-border" src="./img/margins-and-padding-sml.png" width="490" />
+                    <aside class="notes">
+                        <ul>
+                            <li>The Margin property represents the distance between an element and its adjacent elements, and is used to control the element's rendering position, and the rendering position of its neighbors. Margin values can be specified on layout and view classes.</li>
+                            <li>The Padding property represents the distance between an element and its child elements, and is used to separate the control from its own content. Padding values can be specified on layout classes.</li>
+                        </ul>
+
+                        <p>More information: <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/margin-and-padding" target="_blank">Xamarin documentation</a></p>
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - XAML basics</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">XAML</li>
+                        <li class="fragment">Code behind</li>
+                        <li class="fragment">Add views</li>
+                        <li class="fragment">Access controls from code behind</li>
+                        <li class="fragment">Wire events</li>
+                        <li class="fragment">Platform dependent XAML</li>
+                    </ul>
+                    <aside class="notes">
+                        <em>Demonstrate app XTraining::Part1</em>
+                        - Creating Xamarin Forms app
+                        - App structure
+                        - Application life cycle events
+                        - Building interface in code only
+                        -- Explore Label
+                        -- Font size: Platform units. Point formula: (pt * 160) / 72
+                        -- Color structure
+                        -- Text properties.
+                        -- GetNamedStyle
+                        -- Attaching a event handler - in code, in xaml
+                        -- Different syntax for event handler - method, lambda
+                        -- Sharing same handler for multiple buttons
+                        -- Identifying individial elements using a StyleId
+                        - Xaml
+                        -- Xml elements -> object elements
+                        -- Xml attributes -> C# property -> property attributes
+                        -- Xml element -> C# property -> property element
+                        -- Generated code
+                        -- Xaml compilation
+                        -- Type converters
+                        -- Markup Extentions
+                        -- Passing generic arguments
+                        -- Grouping items together in a ContentView
+                        -- WidthRequest &amp; HeightRequest
+                        -- Margin &amp; Padding
+                        -- HorizontalOptions &amp; VerticalOptions
+                        - Layout
+                        -- StackLayout
+                        - Views
+                        -- BoxView
+                        -- Label
+                        -- Entry
+                        -- Button
+                        -- Slider
+                        -- Stepper
+                    </aside>
+                </section>
+                <section data-background-color="#fff">
+                    <img alt="" class="no-border" src="./img/element-classdiagram.png" width="750" />
+                    <aside class="notes">
+                        Important classes in the Element hierarchy:
+                        <ul>
+                            <li>BindableObject (Bindable infrastructure)</li>
+                            <li>Element (base class for all Forms elements. Parent - Child relationship support)</li>
+                            <li>VisualElement (anything that occupies space on the screen)</li>
+                            <li>View (A visual element that is used to place layouts and controls on the screen)</li>
+                            <li>Layout (Layout elements position and size child elements)</li>
+                            <li>Page (A VisualElement that occupies the entire screen)</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Bindable Property</h3>
+                    <ul class="present">
+                        <li class="fragment">Enables data binding</li>
+                        <li class="fragment">Set trough style</li>
+                        <li class="fragment">Default value</li>
+                        <li class="fragment">Value validation</li>
+                        <li class="fragment">Change Monitoring</li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/xaml/bindable-properties/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Visual Tree</h3>
+                    <img alt="" class="no-border" src="./img/visual.vs.forms.png" />
+                    <aside class="notes">
+                        Visual tree (Parent - Child)
+                        Visual tree walking
+                    </aside>
+                </section>
+                <section>
+                    <h3>Pages</h3>
+                    <img alt="" class="no-border" src="./img/Pages-sml.png" />
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/pages/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Layouts</h3>
+                    <img alt="" class="no-border" src="./img/Layouts-sml.png" />
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/layouts/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section id="xamarin-forms-views">
+                    <h3>Views</h3>
+                    <table>
+                        <tr><td>Label</td><td>Image</td><td>SearchBar</td></tr>
+                        <tr><td>Entry</td><td>ProgressBar</td><td>ActivityIndicator</td></tr>
+                        <tr><td>Button</td><td>Slider</td><td>OpenGLView</td></tr>
+                        <tr><td>Editor</td><td>Stepper</td><td>WebView</td></tr>
+                        <tr><td>DatePicker</td><td>Switch</td><td>ListView</td></tr>
+                        <tr><td>BoxView</td><td>TimePicker</td><td></td></tr>
+                        <tr><td>Frame</td><td>Picker</td><td></td></tr>
+                    </table>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/user-interface/controls/views/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Rendering Views</h3>
+                    <img alt="" class="no-border" src="./img/entry-classes.png" />
+                </section>
+                <section>
+                    <h3>Resources</h3>
+<pre><code data-noescape>&lt;Application ...&gt;
+    &lt;Application.Resources&gt;
+        &lt;ResourceDictionary&gt;
+            &lt;Color x:Key=&quot;PageBackgroundColor&quot;&gt;Yellow&lt;/Color&gt;
+            &lt;Color x:Key=&quot;HeadingTextColor&quot;&gt;Black&lt;/Color&gt;
+            &lt;Color x:Key=&quot;NormalTextColor&quot;&gt;Blue&lt;/Color&gt;
+            &lt;Style x:Key=&quot;LabelPageHeadingStyle&quot; TargetType=&quot;Label&quot;&gt;
+                &lt;Setter Property=&quot;FontAttributes&quot; Value=&quot;Bold&quot; /&gt;
+                &lt;Setter Property=&quot;HorizontalOptions&quot; Value=&quot;Center&quot; /&gt;
+                &lt;Setter Property=&quot;TextColor&quot; Value=&quot;{StaticResource HeadingTextColor}&quot; /&gt;
+            &lt;/Style&gt;
+        &lt;/ResourceDictionary&gt;
+    &lt;/Application.Resources&gt;
+&lt;/Application&gt;</code></pre>
+                </section>
+                <section>
+                    <h3>Using Resources</h3>
+<pre><code data-noescape>&lt;StackLayout BackgroundColor=&quot;{StaticResource PageBackgroundColor}&quot;&gt;
+    &lt;Label Text=&quot;ResourceDictionary Demo&quot; Style=&quot;{StaticResource LabelPageHeadingStyle}&quot; /&gt;
+&lt;/StackLayout&gt;</code></pre>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - more XAML</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">More on Layout</li>
+                        <li class="fragment">GridLayout</li>
+                        <li class="fragment">More views</li>
+                        <li class="fragment">Images</li>
+                        <li class="fragment">Declaring Resources &amp; using Resources</li>
+                        <li class="fragment">Styles</li>
+                        <li class="fragment">Stack navigation with NavigationPage</li>
+                        <li class="fragment">Page navigation with TabbedPage</li>
+                    </ul>
+                    <aside class="notes">
+                        <em>Demonstrate app XTraining::Part2</em>
+                        - Layout
+                        -- GridLayout
+                        -- Navigation
+                        - Images
+                        -- FromUri
+                        -- FromResource (Embedded)
+                        -- FromFile (Platform specific)
+                        -- FromStream
+                        -- Setting custom size can only shrink images
+                        - Resources
+                        -- Resource definition
+                        -- No resource dictionary for perf reasons
+                        -- Resource inheritance
+                        - Style
+                        -- Can set only BindableProperty
+                        -- Explicit styles
+                        -- Implicit styles
+                        -- BasedOn can be only a static resource
+                        -- Dynamic inheritance allowed trough BaseResourceKey
+                        - Views
+                        -- ActivityIndicator (Page.IsBusy)
+                        -- ProgressBar
+                        -- Image
+                        -- Switch
+                        -- Editor
+                        -- SearchBar
+                        -- Picker
+                        -- DatePicker
+                        -- TimePicker
+                        - Navigation
+                        -- StackNavigation
+                        -- GridNavigation
+                    </aside>
+                </section>
+                <section>
+                    <h3>Data Binding</h3>
+                    <img alt="" class="no-border" src="./img/binding.png" />
+                    <aside class="notes">
+                        More information:
+                        <ul>
+                            <li><a href="https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-basics/data_binding_basics/" target="_blank">Data binding basics</a></li>
+                            <li><a href="https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/data-binding/" target="_blank">Data binding</a></li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Data Binding</h3>
+                    <ul class="present">
+                        <li class="fragment" data-fragment-index="0">Source</li>
+                        <li class="fragment" data-fragment-index="0">Target<span class="fragment">: <code>BindableObject</code></span></li>
+                        <li class="fragment">Target Property<span class="fragment">: <strong>Bindable property</strong></span></li>
+                        <li class="fragment">Binding context</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Binding Target examples:</h3>
+                    <ul class="present">
+                        <li class="fragment">Text of a Label</li>
+                        <li class="fragment">Text of a Entry</li>
+                        <li class="fragment">Value of a Slider</li>
+                        <li class="fragment">Source of a ListView</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Binding Source examples:</h3>
+                    <ul class="present">
+                        <li class="fragment">Another view (Slider, Entry): <code>{x:Reference Name=slider}</code></li>
+                        <li class="fragment">Static property: <code>{x:Static local:NamedColor.All}</code></li>
+                        <li class="fragment">Object (ViewModel): <code>{Binding FirstName}</code></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Binding Mode</h3>
+                    <ul class="present">
+                        <li class="fragment">Default</li>
+                        <li class="fragment">OneWay</li>
+                        <li class="fragment">OneWayToSource</li>
+                        <li class="fragment">TwoWay</li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.BindingMode/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - Data Binding</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">Data binding syntax</li>
+                        <li class="fragment">Bindable properties</li>
+                        <li class="fragment">Bind to other view elements</li>
+                    </ul>
+                    <aside class="notes">
+                        <em>Demonstrate app XTraining::Part3</em>
+                        - BindingContext
+                        - BindableObject.PropertyChanged
+                        - IValueConverter
+                        - Picker
+                        - ListView
+                    </aside>
+                </section>
+                <section>
+                    <h3>MVVM</h3>
+                    <img alt="" class="no-border" src="./img/mvvm.png" />
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-basics/data_bindings_to_mvvm/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>MVVM frameworks</h3>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Xamarin Forms</li>
+                        <li class="fragment" data-fragment-index="1">MvvmCross</li>
+                        <li class="fragment" data-fragment-index="2">FreshMvvm</li>
+                        <li class="fragment" data-fragment-index="3"><s>Exrin</s></li>
+                        <li class="fragment" data-fragment-index="3">Prism</li>
+                    </ul>
+                    <aside class="notes">
+                        Exrin depricated as of 4th March 2018
+                    </aside>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - MVVM</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">Defining view model</li>
+                        <li class="fragment">Binding to view model</li>
+                        <li class="fragment">Handling actions as commands</li>
+                    </ul>
+                    <aside class="notes">
+                        <em>Demonstrate app XTraining.Part4</em>
+                        - INotifyPropertyChanged
+                        - Generic observable property setter (ViewModelBase)
+                        - ICommand (Command and Command&lt;T&gt;)
+                        - FreshMvvm
+                    </aside>
+                </section>
+                <section>
+                    <h3>Platform specific features</h3>
+                    <img alt="" class="no-border" src="./img/dialophone.png" />
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/dependency-service/introduction/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Platform specific features</h3>
+                    <ol>
+                        <li>Define an interface</li>
+                    </ol>
+                    <img alt="" class="no-border" src="./img/dialer.png" />
+                </section>
+                <section>
+                    <h3>Platform specific features</h3>
+                    <ol start="2" class="present">
+                        <li class="fragment">Provide platform dependent implementation
+                            <pre><code class="cs">public class PhoneDialerDroid : IDialer { }</code></pre>
+                        </li>
+                        <li class="fragment">Expose implementation
+                            <pre><code class="cs">[assembly:Dependency(typeof(PhoneDialerDroid))]</code></pre>
+                        </li>
+                        <li class="fragment">Retrieve and use the dependency using <em>DependencyService</em>
+                            <pre><code data-trim data-noescape class="cs">
+                                IDialer dialer = DependencyService.Get&lt;IDialer&gt;();
+                                if (dialer != null)
+                                {
+                                    dialer.MakeCall(number); // use dialer
+                                }
+                            </code></pre>
+                        </li>
+                    </ol>
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - calling native code</h3>
+                    <aside class="notes">
+                        <em>Demonstrate app XTraining.Part5</em>
+                    </aside>
+                </section>
+                <section id="data-options" class="color-white" data-background="./img/Data_Outlook.jpg">
+                    <h3>Loading data in Xamarin</h3>
+                </section>
+                <section>
+                    <h3>Web Services</h3>
+                    <ul class="present">
+                        <li class="fragment">ASMX</li>
+                        <li class="fragment">WCF</li>
+                        <li class="fragment">REST</li>
+                        <li class="fragment">Azure Mobile App</li>
+                        <li class="fragment">Amazon Web Services</li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/cloud-services/consuming/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Consuming RESTful web service</h3>
+                    <ul class="present">
+                        <li class="fragment">HttpClient</li>
+                        <li class="fragment">NewtonSoft JSON.NET library</li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/cloud-services/consuming/rest/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Consuming RESTful web service</h3>
+                    <pre><code class="cs">public async Task&lt;List&lt;TodoItem&gt;&gt; RefreshDataAsync ()
+{
+  string restUrl = "http://developer.xamarin.com:8081/api/todoitems/";
+  var response = await client.GetAsync(restUrl);
+  if (response.IsSuccessStatusCode) {
+      var content = await response.Content.ReadAsStringAsync();
+      return JsonConvert.DeserializeObject&lt;List&lt;TodoItem&gt;&gt;(content);
+  }
+}</code></pre>
+                </section>
+                <section>
+                    <h3>Local Data</h3>
+                    <ul class="present">
+                        <li class="fragment">SQLite</li>
+                        <li class="fragment">SQLite.NET PCL NuGet Package</li>
+                        <li class="fragment">Database file location</li>
+                    </ul>
+                    <aside class="notes">
+                        More information: <a href="https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/databases/" target="_blank">Xamarin Documentation</a>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Accessing local data</h3>
+                    <pre><code class="cs">public Task&lt;List&lt;TodoItem&gt;&gt; GetItemsAsync()
+{
+  return database.Table&lt;TodoItem&gt;().ToListAsync();
+}
+
+public Task&lt;List&lt;TodoItem&gt;&gt; GetItemsNotDoneAsync()
+{
+  return database.QueryAsync&lt;TodoItem&gt;(&quot;SELECT * FROM [TodoItem] WHERE [Done] = 0&quot;);
+}
+
+public Task&lt;TodoItem&gt; GetItemAsync(int id)
+{
+  return database.Table&lt;TodoItem&gt;().Where(i =&gt; i.ID == id).FirstOrDefaultAsync();
+}
+
+public Task&lt;int&gt; SaveItemAsync(TodoItem item)
+{
+  if (item.ID != 0)
+  {
+    return database.UpdateAsync(item);
+  }
+  else {
+    return database.InsertAsync(item);
+  }
+}
+
+public Task&lt;int&gt; DeleteItemAsync(TodoItem item)
+{
+  return database.DeleteAsync(item);
+}</code></pre>
+                </section>
+            </section>
+            <section id="telerik-intro">
+                <section class="color-white" data-background="./img/umbrella-bg.jpg">
+                    <h3>Why choose Telerik</h3>
+                    <ul class="present">
+                        <li class="fragment">70+ UI Components</li>
+                        <li class="fragment">iOS, Android &amp; Forms Support</li>
+                        <li class="fragment">Native UI &amp; Performance on Every Platform</li>
+                        <li class="fragment">MVVM support</li>
+                        <li class="fragment">Design-time support</li>
+                        <li class="fragment">Theming</li>
+                        <li class="fragment">Visual Studio Item Templates</li>
+                    </ul>
+                </section>
+                <section data-background="./img/Getting+Started.png">
+                    <h3>Installing Telerik components for Xamarin</h3>
+                    <ul class="present">
+                        <li class="fragment">Setup <b>TelerikUIForXamarinSetup_b_version.exe</b></li>
+                        <li class="fragment">MSI installer for Windows</li>
+                        <li class="fragment">ZIP archive for manual installation on any platform</li>
+                        <li class="fragment">Nuget: <b>https://nuget.telerik.com/nuget</b></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Lite vs Standard Assemblies</h3>
+                    <img alt="" class="no-border" src="./img/1_W7eAHPTW-oTpA1LW4OfeEQ.png" width="500" />
+                    <aside class="notes">
+                        <p>Some of the controls included in the UI for Xamarin suite(Gauges, Rating, BusyIndicator) rely on the SkiaSharp rendering library. This is the reason а reference to it should be added when using the standard Telerik UI for Xamarin libraries. However, in case you do not intend to use these controls you can reference the binaries included in the Lite folder of your local installation. This will eventually lead to lower size when deploying your application in the respective store. If you are using NuGet as a package manager, you should install the .Lite package</p>
+                        <p>Тhe difference between the lite and standard binaries is that the former do not need the actual SkiaSharp binary files to function as intended. Instead, they reference an empty assembly labeled Telerik.XamarinForms.SkiaSharp.</p>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section id="telerik-components" data-background-color="#EFF8FF">
+                    <div style="display: flex; font-size: 16px; justify-content: center">
+                        <div style="margin-right: 10px;">
+                            <strong style="display: table; margin-bottom: 10px;">XAMARIN.FORMS</strong>
+                            <ul>
+                                <li>Chart</li>
+                                <li>ListView</li>
+                                <li>Calendar</li>
+                                <li>SideDrawer</li>
+                                <li>DataForm</li>
+                                <li>Radial Gauge</li>
+                                <li>Linear Gauge</li>
+                                <li>AutoCompleteTextView</li>
+                                <li>SpreadStreamProcessing</li>
+                                <li>Zip Library</li>
+                                <li>TabView</li>
+                                <li>Rating</li>
+                                <li>Busy Indicator</li>
+                                <li>DayView</li>
+                                <li>DataGrid</li>
+                                <li>Segmented Control</li>
+                                <li>MaskedInput</li>
+                                <li>SlideView</li>
+                                <li>RadPath</li>
+                                <li>NumericInput</li>
+                                <li>RadEntry</li>
+                                <li>Buttons</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong style="display: table; margin-bottom: 10px;">XAMARIN.IOS</strong>
+                            <ul>
+                                <li>Chart</li>
+                                <li>ListView</li>
+                                <li>Calendar</li>
+                                <li>SideDrawer</li>
+                                <li>DataForm</li>
+                                <li>Radial Gauge</li>
+                                <li>Linear Gauge</li>
+                                <li>AutoCompleteTextView</li>
+                                <li>SpreadStreamProcessing</li>
+                                <li>Zip Library</li>
+                                <li>TabView</li>
+                                <li>Rating</li>
+                                <li>Busy Indicator</li>
+                                <li>AppFeedback</li>
+                                <li>DataSource</li>
+                                <li>DayView</li>
+                                <li>Alert</li>
+                            </ul>
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <strong style="display: table; margin-bottom: 10px;">XAMARIN.ANDROID</strong>
+                            <ul>
+                                <li>Chart</li>
+                                <li>ListView</li>
+                                <li>Calendar</li>
+                                <li>SideDrawer</li>
+                                <li>DataForm</li>
+                                <li>Radial Gauge</li>
+                                <li>Linear Gauge</li>
+                                <li>AutoCompleteTextView</li>
+                                <li>SpreadStreamProcessing</li>
+                                <li>Zip Library</li>
+                                <li>TabView</li>
+                                <li>Rating</li>
+                                <li>Busy Indicator</li>
+                                <li>AppFeedback</li>
+                                <li>DataSource</li>
+                                <li>DayView</li>
+                                <li>Segmented Control</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        <p><b>Develop through Xamarin.Forms</b>. Using this approach you can quickly achieve similar look and feel on all available platforms by sharing the same code base. All controls and views are eventually translated to platform-specific native elements without the need of any further actions from your side. You should consider this approach for:</p>
+                        <ul>
+                            <li>Apps that require little platform-specific functionality</li>
+                            <li>Apps where code sharing is more important than custom UI and platform-specific features</li>
+                            <li>You feel comfortable creating your UI through XAML</li>
+                        </ul>
+                        
+                        <p><b>Develop through Xamarin Native(Xamarin.iOS &amp; Xamarin.Android)</b>. By choosing this approach, you can take full advantage of each platform. You are free to create platform-specific views to achieve the desired appearance in the smallest details. You can access native APIs and utilize device-specific features. You should consider this approach for:</p>
+                            <ul>
+                                <li>Apps that require native behavior</li>
+                                <li>Apps that need to use platform-specific APIs</li>
+                                <li>Apps where you need to achieve custom UI according to the target platform</li>
+                            </ul>
+
+                        <p>The Android Wrappers are built on top of the truly native controls from the UI for Android suite(discontinued as a separate product as of April 20th 2017). The following controls are available for Xamarin.Android development</p>
+                        <p>The iOS Wrappers are built on top of the truly native controls from the UI for iOS suite(discontinued as a separate product as of April 20th 2017). The following controls are available for Xamarin.iOS development</p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Let's explore!</h3>
+                    <img alt="" class="no-border" src="./img/cartoon-scuba-diver-hi.png">
+                </section>
+                <section>
+                    <h3>Chart</h3>
+                    <img alt="" class="no-border" src="./img/chart-overview.png" width="750" />
+                </section>
+                <section>
+                    <h3>ListView</h3>
+                    <img alt="" class="no-border" src="./img/listview.png" width="500" />
+                </section>
+                <section>
+                    <h3>DataGrid</h3>
+                    <img alt="" class="no-border" src="./img/overview-grid.png" width="750" />
+                </section>
+                <section data-background-color="#000">
+                    <h3>Live Coding - Telerik UI</h3>
+                    <h4>Objectives</h4>
+                    <ul class="present">
+                        <li class="fragment">Use REST service</li>
+                        <li class="fragment">Explore Telerik components for Xamarin</li>
+                    </ul>
+                    <aside class="notes">
+                        <em>Demonstrate app XTraining::Part6</em>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Localization and Accessibility</h3>
+                    <ul class="present">
+                        <li class="fragment">Use NamedStyles for font sizes</li>
+                        <li class="fragment">Move text to RESX files</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>Xamarin.Forms apps can be localized using .NET resources files.</p>
+
+                        <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization?tabs=vswin">Localization</a>                        
+                    </aside>
+                </section>
+                <section data-background="./img/bg-pattern.png">
+                    <h3>Themes</h3>
+                    <ul class="present">
+                        <li class="fragment">Company branding</li>
+                        <li class="fragment">Consistent look and feel between platforms</li>
+                    </ul>
+                    <aside class="notes">
+                        <p>Company branding, or consistent look and feel between platforms, is now possible thanks to Telerik UI for Xamarin! Telerik UI for Xamarin offers a theming mechanism that allows styling the controls using the theming available in Xamarin.Forms. Users can build a set of Styles for the controls adhering to a common look, and easily apply these styles through a single property. What’s more, we’ve created a built-in predefined theme – BlueTheme – for you to start with.</p>
+
+                        <ol>
+                            <li>Merge The Required ResourceDictionaries</li>
+                            <li>Set the StyleClass on Control Level</li>
+                        </ol>
+
+                        <a href="https://docs.telerik.com/devtools/xamarin/styling-and-appearance/xamarin-forms-theming/how-to-set-theme#merge-the-required-resourcedictionaries">Documentation</a>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <h3>Further reading</h3>
+                <ul class="present">
+                    <li class="fragment">Creating Mobile Apps with Xamarin.Forms Book</li>
+                    <li class="fragment">Xamarin University</li>
+                    <li class="fragment">Xamarin Documentation</li>
+                    <li class="fragment">Telerik UI for Xamarin Documentation</li>
+                </ul>
+            </section>
+            <section id="questions">
+                <h3>Questions?</h3>
+                <img alt="" class="" src="./img/cats-staring.jpg" width="500" />
+            </section>
+            <section id="end">
+                <h2>Thank You!</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img alt="" class="no-border" src="./img/email.png" style="width:70px"></td>
+                            <td style="vertical-align:middle"> <a href="mailto:yavor@newventuresoftware.com?Subject=Hello" target="_blank">yavor@newventuresoftware.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><img alt="" class="no-border" src="./img/github.png" width="70"></td>
+                            <td style="vertical-align:middle"> <a href="https://github.com/yavor87" target="_blank">github.com/yavor87</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <section class="reveal-shared">
+            <div class="nvs-logo-container">
+                <a href="http://www.newventuresoftware.com/" target="_blank">
+                    <img alt="" class="no-border" src="./img/nvs-logo.svg" width="150"/>
+                </a>
+            </div>
+            <div class="progress-logo-container">
+                <img alt="" src="./img/progress-watermarks/Progress_Logos_Telerik-Xamarin_vertical.png" class="no-border" width="250" />
+            </div>
+            <div class="nvs-website-bar">
+                <span class="nvs-website-text brackets">www.newventuresoftware.com</span>
+                <small style="float: right; margin-right: 20px;">
+                    &copy; 2018 Progress Software Corporation and/or its subsidiaries or affiliates. All rights reserved.
+                </small>
+            </div>
+        </section>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+         // More info about config & dependencies:
+         // - https://github.com/hakimel/reveal.js#configuration
+         // - https://github.com/hakimel/reveal.js#dependencies
+         Reveal.initialize({
+            history: true,
+            progress: true,
+            touch: true,
+            transition: 'fade-in',
+            dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ],
+            slideNumber: 'c/t'
+         });
+     </script>
+ </body>
+ </html>

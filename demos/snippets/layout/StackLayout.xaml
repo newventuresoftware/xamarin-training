@@ -1,0 +1,15 @@
+<StackLayout Orientation="Vertical">
+    <BoxView Color="Red" HorizontalOptions="Start" />
+    <BoxView Color="Green" HorizontalOptions="Center" />
+    <BoxView Color="Blue" HorizontalOptions="End" />
+    <BoxView Color="Magenta" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" />
+</StackLayout>
+
+<StackLayout Orientation="Horizontal">
+    <BoxView Color="Red" VerticalOptions="Start" />
+    <BoxView Color="Green" VerticalOptions="Center" />
+    <BoxView Color="Blue" VerticalOptions="End" />
+    <BoxView Color="Magenta" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" />
+</StackLayout>
+
+<StackLayout Orientation="Horizontal" Spacing="3" />

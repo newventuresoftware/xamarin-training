@@ -1,0 +1,18 @@
+<Grid ColumnSpacing="3" RowSpacing="2">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="100" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="2*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <BoxView Color="Red" Grid.Row="0" Grid.Column="0" />
+    <BoxView Color="Green" Grid.Row="0" Grid.Column="1" />
+    <BoxView Color="Blue" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
+    <BoxView Color="SeaShell" Grid.Row="2" />
+    <BoxView Color="SteelBlue" Grid.Row="2" Grid.Column="0" />
+    <BoxView Color="Yellow" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" />
+</Grid>

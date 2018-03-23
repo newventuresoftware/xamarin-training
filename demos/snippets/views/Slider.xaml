@@ -1,0 +1,8 @@
+<Slider Value="0.6" Minimum="0" Maximum="1" />
+<Slider Maximum="100" Minimum="1" Value="28" />
+<Slider Maximum="100" Minimum="1" Value="28" ValueChanged="OnSliderValueChanged" />
+
+void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+{
+    double newValue = args.NewValue;
+}

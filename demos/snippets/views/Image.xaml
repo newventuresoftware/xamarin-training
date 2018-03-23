@@ -1,0 +1,24 @@
+<Image Source="https://developer.xamarin.com/demo/IMG_1415.JPG" />
+<Image Source="https://developer.xamarin.com/demo/IMG_1415.JPG" Aspect="AspectFill" />
+<Image Aspect="AspectFit">
+    <Image.Source>
+        <UriImageSource Uri="https://developer.xamarin.com/demo/IMG_3256.JPG" />
+    </Image.Source>
+</Image>
+<Image Source="https://developer.xamarin.com/demo/IMG_1415.JPG" Aspect="Fill" />
+
+<Image>
+    <Image.Source>
+        <StreamImageSource Stream="{x:Static Images.Image1}" />
+    </Image.Source>
+</Image>
+
+<Image>
+    <Image.Source>
+        <FileImageSource>
+            <FileImageSource.File>
+                <OnPlatform x:TypeArguments="x:String" iOS="Icon-Small-40.png" Android="icon.png" WinPhone="Assets/StoreLogo.png" />
+            </FileImageSource.File>
+        </FileImageSource>
+    </Image.Source>
+</Image>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamlPlayground"
+             x:Class="XamlPlayground.StackPage" Title="Stack">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="bgColor">Red</Color>
+            <Color x:Key="outColor">DarkRed</Color>
+            <Thickness x:Key="margin">10</Thickness>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame BackgroundColor="{StaticResource bgColor}" OutlineColor="{StaticResource outColor}" Margin="{StaticResource margin}" />
+        <Frame BackgroundColor="{StaticResource bgColor}" OutlineColor="{StaticResource outColor}" Margin="{StaticResource margin}" />
+        <Frame BackgroundColor="{StaticResource bgColor}" OutlineColor="{StaticResource outColor}" Margin="{StaticResource margin}" />
+        <Frame BackgroundColor="{StaticResource bgColor}" OutlineColor="{StaticResource outColor}" Margin="{StaticResource margin}" />
+        <Frame BackgroundColor="{StaticResource bgColor}" OutlineColor="{StaticResource outColor}" Margin="{StaticResource margin}" />
+    </StackLayout>
+
+</ContentPage>

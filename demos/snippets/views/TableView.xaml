@@ -1,0 +1,31 @@
+<TableView Intent="Settings">
+    <TableRoot>
+        <TableSection Title="Ring">
+            <SwitchCell Text="New Voice Mail" />
+      <SwitchCell Text="New Mail" On="true" />
+        </TableSection>
+    </TableRoot>
+</TableView>
+
+<TableView Intent="Form" BindingContext="{Binding Person}">
+    <TableRoot Title="Data Form">
+        <TableSection Title="Personal Information">
+            <EntryCell Label="Name:" Text="{Binding Name}" Placeholder="Enter name" Keyboard="Text" />
+            <EntryCell Label="Email:" Text="{Binding EmailAddress}" Placeholder="Enter email address" Keyboard="Email" />
+            <EntryCell Label="Phone:" Text="{Binding PhoneNumber}" Placeholder="Enter phone number" Keyboard="Telephone" />
+            <EntryCell Label="Age:" Text="{Binding Age}" Placeholder="Enter age" Keyboard="Numeric" />
+            <SwitchCell Text="Are you a programmer?" On="{Binding IsProgrammer}" />
+        </TableSection>
+    </TableRoot>
+</TableView>
+
+<TableView Intent="Menu" VerticalOptions="Fill" BindingContext="{x:Reference page}">
+    <TableRoot>
+        <TableSection Title="Move the Box">
+            <TextCell Text="Left" Command="{Binding MoveCommand}" CommandParameter="left" />
+            <TextCell Text="Up" Command="{Binding MoveCommand}" CommandParameter="up" />
+            <TextCell Text="Right" Command="{Binding MoveCommand}" CommandParameter="right" />
+            <TextCell Text="Down" Command="{Binding MoveCommand}" CommandParameter="down" />
+        </TableSection>
+    </TableRoot>
+</TableView>

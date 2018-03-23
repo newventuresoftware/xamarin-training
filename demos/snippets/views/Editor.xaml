@@ -1,0 +1,16 @@
+<Editor Text="some text" />
+<Editor Text="some text" TextColor="Red" />
+<Editor Text="some@mail.com" Keyboard="Email" />
+<Editor Text="some text" FontSize="Medium" FontFamily="monospace" FontAttributes="Bold" />
+
+<Editor Text="some text" TextChanged="OnEditorTextChanged" Completed="OnEditorCompleted" />
+
+void OnEditorTextChanged(object sender, TextChangedEventArgs args)
+{
+
+}
+
+void OnEditorCompleted(object sender, EventArgs args)
+{
+
+}

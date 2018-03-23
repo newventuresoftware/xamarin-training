@@ -1,0 +1,112 @@
+<ListView>
+    <ListView.ItemsSource>
+        <x:Array Type="{x:Type Color}">
+            <x:Static Member="Color.Red" />
+            <Color>Green</Color>
+        </x:Array>
+    </ListView.ItemsSource>
+</ListView>
+
+<!--Separator-->
+<ListView SeparatorVisibility="Default" SeparatorColor="Red" />
+
+<!--Row height-->
+<ListView RowHeight="100" />
+<ListView HasUnevenRows="True" />
+
+<!--Text cell-->
+<ListView ItemsSource="{Binding Data}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <TextCell Text="{Binding DisplayName}" Detail="{Binding Telephone}" />
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
+<!--Image cell-->
+<ListView ItemsSource="{Binding Data}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ImageCell ImageSource="{Binding Photo}" Text="{Binding DisplayName}" Detail="{Binding Telephone}" />
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
+<!--Custom cell-->
+<ListView ItemsSource="{Binding Data}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="{Binding image}" />
+                    <Label Text="{Binding title}" TextColor="#f35e20" />
+                    <Label Text="{Binding subtitle}"
+                        HorizontalOptions="EndAndExpand"
+                        TextColor="#503026" />
+                </StackLayout>
+
+                <!--context menu-->
+                <ViewCell.ContextActions>
+                    <MenuItem Clicked="OnMore" CommandParameter="{Binding MoreCommand}" Text="More" />
+                    <MenuItem Clicked="OnDelete" CommandParameter="{Binding DeleteCommand}" Text="Delete" IsDestructive="True" />
+                </ViewCell.ContextActions>
+
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
+<!--Grouping-->
+<ListView GroupDisplayBinding="{Binding Title}"
+          GroupShortNameBinding="{Binding ShortName}"
+          IsGroupingEnabled="true">
+    <!-- Group Header Customization-->
+    <ListView.GroupHeaderTemplate>
+        <DataTemplate>
+            <TextCell Text="{Binding Title}" Detail="{Binding ShortName}"
+                      TextColor="#f35e20" DetailColor="#503026" />
+        </DataTemplate>
+    </ListView.GroupHeaderTemplate>
+</ListView>
+
+<!--Header and Footer-->
+<ListView>
+    <ListView.Header>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Header" TextColor="Olive" BackgroundColor="Red" />
+        </StackLayout>
+    </ListView.Header>
+    <ListView.Footer>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Footer" TextColor="Gray" BackgroundColor="Blue" />
+        </StackLayout>
+    </ListView.Footer>
+</ListView>
+
+<ListView Header="{Binding Header}" Footer="{Binding Footer}">
+    <ListView.HeaderTemplate>
+        <DataTemplate>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Header" TextColor="Olive" BackgroundColor="Red" />
+            </StackLayout>
+        </DataTemplate>
+    </ListView.HeaderTemplate>
+    <ListView.FooterTemplate>
+        <DataTemplate>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Footer" TextColor="Gray" BackgroundColor="Blue" />
+            </StackLayout>
+        </DataTemplate>
+    </ListView.FooterTemplate>
+</ListView>
+
+<!--Pull down to refresh-->
+<ListView IsPullToRefreshEnabled="True" RefreshCommand="{Binding LoadDataCommand}" IsRefreshing="{Binding IsLoadingData}" />
+
+<ListView SelectedItem="{Binding SelectedColor, Mode=OneWayToSource}" />
+<ListView ItemSelected="OnListViewItemSelected" />
+
+private void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+{
+    object selectedItem = e.SelectedItem;
+}

@@ -1,0 +1,6 @@
+<ContentPage.ToolbarItems>
+    <ToolbarItem Order="Primary" Icon="Microsoft.png" Text="Item 1" Priority="0"
+                 Activated="MenuItem1_Activated" />
+    <ToolbarItem Order="Primary" Icon="Xamarin.png" Text="Item 2" Priority="1"
+                 Command="{Binding ToolbarItemCommand}" CommandParameter="1" />
+</ContentPage.ToolbarItems>

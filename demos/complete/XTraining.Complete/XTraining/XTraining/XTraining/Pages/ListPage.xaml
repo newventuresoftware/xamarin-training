@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XTraining.Pages.ListPage" Title="List">
+    <ContentPage.Content>
+        <telerikDataControls:RadListView x:Name="listView" ItemsSource="{Binding Customers}" IsItemsReorderEnabled="True" IsItemSwipeEnabled="True"
+                                         SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}">
+            <telerikDataControls:RadListView.ItemTemplate>
+                <DataTemplate>
+                    <telerikListView:ListViewTextCell Text="{Binding ContactName}" TextColor="Black" Detail="{Binding CustomerID}" DetailColor="Gray" />
+                </DataTemplate>
+            </telerikDataControls:RadListView.ItemTemplate>
+            
+            <telerikDataControls:RadListView.ItemSwipeContentTemplate>
+                <DataTemplate>
+                    <Grid Margin="0" Padding="0" ColumnSpacing="0" RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Margin="0" BackgroundColor="Red" BorderRadius="0" Text="Delete"
+                                Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference listView}}" CommandParameter="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </telerikDataControls:RadListView.ItemSwipeContentTemplate>
+
+            <telerikDataControls:RadListView.SortDescriptors>
+                <telerikListView:PropertySortDescriptor PropertyName="CustomerID" />
+            </telerikDataControls:RadListView.SortDescriptors>
+        </telerikDataControls:RadListView>
+    </ContentPage.Content>
+</ContentPage>

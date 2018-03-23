@@ -1,0 +1,23 @@
+<Button Text="Click me" />
+<Button Text="Click me" BackgroundColor="Blue" />
+<Button Text="Click me" BorderColor="Blue" BorderWidth="2" />
+<Button Text="Click me" TextColor="Red" FontFamily="monospace" FontAttributes="Bold" FontSize="Medium" />
+<Button Text="Click me" Clicked="OnButtonClicked" />
+<Button Text="Click me" Command="{Binding IncreaseExponentCommand}" CommandParameter="2" />
+
+<Button Text="Click me">
+    <Button.Image>
+        <FileImageSource>
+            <FileImageSource.File>
+                <OnPlatform x:TypeArguments="x:String" iOS="Icon-Small-40.png"
+                            Android="icon.png"
+                            WinPhone="Assets/StoreLogo.png" />
+            </FileImageSource.File>
+        </FileImageSource>
+    </Button.Image>
+</Button>
+
+void OnButtonClicked(object sender, EventArgs args)
+{
+
+}

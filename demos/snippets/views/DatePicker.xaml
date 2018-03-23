@@ -1,0 +1,11 @@
+<DatePicker Format="dd-MM-yyyy" />
+<DatePicker TextColor="Red" />
+<DatePicker Date="01/24/2016" Format="D" />
+<DatePicker MinimumDate="03/01/2016" MaximumDate="10/31/2016" Date="01/24/2016" />
+<DatePicker Date="{Binding BirthDate}" />
+<DatePicker DateSelected="OnDateSelected" />
+
+void OnDateSelected(object sender, DateChangedEventArgs args)
+{
+    DateTime newDate = args.NewDate;
+}

@@ -1,0 +1,37 @@
+<x:Boolean>True</x:Boolean>
+<x:Byte>1</x:Byte>
+<x:Int16>10</x:Int16>
+<x:Int32>27</x:Int32>
+<x:Int64>138</x:Int64>
+<x:Single>38</x:Single>
+<x:Double>0.5</x:Double>
+<x:Decimal>0.6</x:Decimal>
+<x:Char>c</x:Char>
+<x:String>hello</x:String>
+<x:TimeSpan>10:20:30</x:TimeSpan>
+<x:DateTime>03/01/2016</x:DateTime>
+
+<x:Array Type="{x:Type Color}">
+    <x:Static Member="Color.Red" />
+    <Color>Green</Color>
+    <Color>
+        <x:Arguments>
+            <x:Double>1</x:Double>
+            <x:Double>0</x:Double>
+            <x:Double>0</x:Double>
+        </x:Arguments>
+    </Color>
+    <Color x:FactoryMethod="FromRgb">
+        <x:Arguments>
+            <x:Int32>0</x:Int32>
+            <x:Int32>0</x:Int32>
+            <x:Int32>255</x:Int32>
+        </x:Arguments>
+    </Color>
+</x:Array>
+
+<x:Array Type="{x:Type x:Int32}">
+    <x:Int32>1</x:Int32>
+    <x:Int32>2</x:Int32>
+    <x:Int32>3</x:Int32>
+</x:Array>

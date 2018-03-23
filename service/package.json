@@ -1,0 +1,14 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "Provides sample data from Northwind.",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server db.json --routes routes.json"
+  },
+  "author": "Yavor Ivanov",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  }
+}

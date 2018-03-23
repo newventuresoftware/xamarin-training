@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XTraining"
+             x:Class="XTraining.MainPage">
+    
+    <StackLayout>
+        <BoxView x:Name="colorBox" WidthRequest="160" HeightRequest="160" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+        <!--<Slider x:Name="redSlider" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" />
+        <Slider x:Name="greenSlider" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" />
+        <Slider x:Name="blueSlider" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" />-->
+        
+        <!--<Stepper x:Name="redSlider" Minimum="0" Maximum="255" Increment="5" ValueChanged="OnSliderValueChanged" />
+        <Stepper x:Name="greenSlider" Minimum="0" Maximum="255" Increment="5" ValueChanged="OnSliderValueChanged" />
+        <Stepper x:Name="blueSlider" Minimum="0" Maximum="255" Increment="5" ValueChanged="OnSliderValueChanged" />-->
+
+        <StackLayout Orientation="Horizontal">
+            <Stepper x:Name="redSlider" Minimum="0" Maximum="255" Increment="5" ValueChanged="OnSliderValueChanged" />
+            <Entry x:Name="redEntry" HorizontalOptions="FillAndExpand" Keyboard="Numeric" HorizontalTextAlignment="Center" Completed="OnTextCompleted" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Stepper x:Name="greenSlider" Minimum="0" Maximum="255" Increment="5" ValueChanged="OnSliderValueChanged" />
+            <Entry x:Name="greenEntry" HorizontalOptions="FillAndExpand" Keyboard="Numeric" HorizontalTextAlignment="Center" Completed="OnTextCompleted" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Stepper x:Name="blueSlider" Minimum="0" Maximum="255" Increment="5" ValueChanged="OnSliderValueChanged" />
+            <Entry x:Name="blueEntry" HorizontalOptions="FillAndExpand" Keyboard="Numeric" HorizontalTextAlignment="Center" Completed="OnTextCompleted" />
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>
