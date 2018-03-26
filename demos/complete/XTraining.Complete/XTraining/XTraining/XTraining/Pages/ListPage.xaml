@@ -9,7 +9,7 @@
                                          SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}">
             <telerikDataControls:RadListView.ItemTemplate>
                 <DataTemplate>
-                    <telerikListView:ListViewTextCell Text="{Binding ContactName}" TextColor="Black" Detail="{Binding CustomerID}" DetailColor="Gray" />
+                    <telerikListView:ListViewTextCell Text="{Binding ContactName}" TextColor="Black" Detail="{Binding ID}" DetailColor="Gray" />
                 </DataTemplate>
             </telerikDataControls:RadListView.ItemTemplate>
             
@@ -27,7 +27,7 @@
             </telerikDataControls:RadListView.ItemSwipeContentTemplate>
 
             <telerikDataControls:RadListView.SortDescriptors>
-                <telerikListView:PropertySortDescriptor PropertyName="CustomerID" />
+                <telerikListView:PropertySortDescriptor PropertyName="ID" />
             </telerikDataControls:RadListView.SortDescriptors>
         </telerikDataControls:RadListView>
     </ContentPage.Content>

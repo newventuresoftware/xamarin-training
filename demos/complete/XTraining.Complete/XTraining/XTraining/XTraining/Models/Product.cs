@@ -7,7 +7,7 @@ namespace XTraining.Models
         public int? CategoryID { get; set; }
         [JsonConverter(typeof(BoolConverter))]
         public bool Discontinued { get; set; }
-        public int? ProductID { get; set; }
+        public int? ID { get; set; }
         public string ProductName { get; set; }
         public string QuantityPerUnit { get; set; }
         public short? ReorderLevel { get; set; }

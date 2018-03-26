@@ -68,9 +68,11 @@ namespace XTraining.PageModels
             CoreMethods.PushPageModel<CustomerDetailsPageModel>(customer, false, true);
         }
 
-        private void DeleteCustomer(Customer customer)
+        private async void DeleteCustomer(Customer customer)
         {
-
+            bool result = await this.northwindService.DeleteCustomer(customer);
+            string resultStr = result ? "successfully" : "unsuccessfully";
+            await CoreMethods.DisplayAlert("Customer Update", $"Customer updated {resultStr}", "OK");
         }
     }
 }

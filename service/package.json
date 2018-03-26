@@ -4,7 +4,7 @@
   "description": "Provides sample data from Northwind.",
   "main": "index.js",
   "scripts": {
-    "start": "json-server db.json --routes routes.json"
+    "start": "json-server db.json --id ID"
   },
   "author": "Yavor Ivanov",
   "license": "ISC",

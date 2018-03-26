@@ -8,7 +8,7 @@ namespace XTraining.Models
         public int? EmployeeID { get; set; }
         public decimal? Freight { get; set; }
         public DateTime? OrderDate { get; set; }
-        public int OrderID { get; set; }
+        public int ID { get; set; }
         public DateTime? RequiredDate { get; set; }
         public string ShipAddress { get; set; }
         public string ShipCity { get; set; }

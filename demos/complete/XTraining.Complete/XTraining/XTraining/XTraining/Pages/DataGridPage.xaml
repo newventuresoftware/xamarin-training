@@ -8,7 +8,7 @@ xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.
         <telerikGrid:RadDataGrid ItemsSource="{Binding Orders}" AutoGenerateColumns="False" >
             <telerikGrid:RadDataGrid.Columns>
                 <telerikGrid:DataGridTextColumn PropertyName="CustomerID" />
-                <telerikGrid:DataGridNumericalColumn PropertyName="OrderID" IsVisible="False" />
+                <telerikGrid:DataGridNumericalColumn PropertyName="ID" IsVisible="False" />
                 <telerikGrid:DataGridDateColumn PropertyName="OrderDate" CellContentFormat="{}{0:MM/dd/yyyy}" />
                 <telerikGrid:DataGridDateColumn PropertyName="RequiredDate" CellContentFormat="{}{0:MM/dd/yyyy}" IsVisible="False" />
                 <telerikGrid:DataGridDateColumn PropertyName="ShippedDate" CellContentFormat="{}{0:MM/dd/yyyy}" IsVisible="False" />
