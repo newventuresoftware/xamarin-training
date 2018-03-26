@@ -45,9 +45,16 @@ namespace XTraining.Services
 * Navigate to `\demos\complete\HelloXamarinNative`
 * All the needed files are already included and referenced, so simply build the project (CTRL + SHIFT + B) to get it ready to run.
 
+### XForms
+
+* Navigate to `\demos\complete\XForms.Complete\XForms`
+* Open `XForms.sln`
+* A simple build is sufficient.
+
 ### XTraining
 
 * Navigate to `\demos\complete\XTraining.Complete\XTraining`
+* Open `XTraining.sln`
 * A simple build is sufficient here as well.
 * Use this [step-by-step tutorial](https://docs.telerik.com/devtools/xamarin/installation-and-deployment/windows/getting-started-windows) on how to build a Telerik UI for Xamarin project from scratch or how to integrate the Telerik UI suite in an already existing project.
 
