@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace XTraining.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainPage : ContentPage
+	public partial class DataGridPage : ContentPage
 	{
-		public MainPage ()
+		public DataGridPage ()
 		{
 			InitializeComponent ();
 		}

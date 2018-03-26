@@ -8,6 +8,8 @@
             <TableView.Root>
                 <TableSection>
                     <TextCell Text="Chart" Command="{Binding NavigateCommand}" CommandParameter="chart" />
+                    <TextCell Text="DataGrid" Command="{Binding NavigateCommand}" CommandParameter="datagrid" />
+                    <TextCell Text="List" Command="{Binding NavigateCommand}" CommandParameter="list" />
                 </TableSection>
             </TableView.Root>
         </TableView>

@@ -27,6 +27,14 @@ namespace XTraining.PageModels
             {
                 await CoreMethods.PushPageModel<ChartPageModel>(null, false, true);
             }
+            else if (target == "datagrid")
+            {
+                await CoreMethods.PushPageModel<DataGridPageModel>(null, false, true);
+            }
+            else if (target == "list")
+            {
+                await CoreMethods.PushPageModel<ListPageModel>(null, false, true);
+            }
         }
     }
 }
