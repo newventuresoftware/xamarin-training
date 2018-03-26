@@ -7,8 +7,6 @@
         <TableView Intent="Menu">
             <TableView.Root>
                 <TableSection>
-                    <TextCell Text="Color creator" Command="{Binding NavigateCommand}" CommandParameter="color" />
-                    <TextCell Text="Dialer" Command="{Binding NavigateCommand}" CommandParameter="dialer" />
                     <TextCell Text="Chart" Command="{Binding NavigateCommand}" CommandParameter="chart" />
                     <TextCell Text="DataGrid" Command="{Binding NavigateCommand}" CommandParameter="datagrid" />
                     <TextCell Text="List" Command="{Binding NavigateCommand}" CommandParameter="list" />

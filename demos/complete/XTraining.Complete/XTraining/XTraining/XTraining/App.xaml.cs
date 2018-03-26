@@ -18,8 +18,6 @@ namespace XTraining
             {
                 var masterDetail = new FreshMvvm.FreshMasterDetailNavigationContainer();
                 masterDetail.Init("Menu");
-                masterDetail.AddPage<PageModels.ColorPageModel>("Color");
-                masterDetail.AddPage<PageModels.DialPageModel>("Dialer");
                 masterDetail.AddPage<PageModels.ChartPageModel>("Chart");
                 masterDetail.AddPage<PageModels.DataGridPageModel>("DataGrid");
                 masterDetail.AddPage<PageModels.ListPageModel>("List");

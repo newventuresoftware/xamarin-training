@@ -23,20 +23,7 @@ namespace XTraining.PageModels
 
         private async void OnNavigate(string target)
         {
-            if (target == "color")
-            {
-                await CoreMethods.PushPageModel<ColorPageModel>(null, false, true);
-            }
-            else if (target == "dialer")
-            {
-                //var tabbedContainer = new FreshMvvm.FreshTabbedNavigationContainer("secondNavPage");
-                //tabbedContainer.AddTab<ColorPageModel>("Colors", null);
-                //tabbedContainer.AddTab<DialPageModel>("Dialer", null);
-                //await CoreMethods.PushNewNavigationServiceModal(tabbedContainer);
-
-                await CoreMethods.PushPageModel<DialPageModel>(null, false, true);
-            }
-            else if (target == "chart")
+            if (target == "chart")
             {
                 await CoreMethods.PushPageModel<ChartPageModel>(null, false, true);
             }
