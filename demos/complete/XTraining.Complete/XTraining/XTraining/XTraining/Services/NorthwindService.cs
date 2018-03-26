@@ -16,6 +16,7 @@ namespace XTraining.Services
         Task<IList<Models.Order>> GetOrdersAsync(int? limit = null);
         Task<bool> DeleteCustomer(Models.Customer customer);
         Task<bool> UpdateCustomer(Models.Customer customer);
+        Task<bool> InsertCustomer(Models.Customer customer);
     }
 
     public class NorthwindService : INorthwindService
@@ -82,11 +83,12 @@ namespace XTraining.Services
             return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> UpdateCustomer(Customer customer)
+        public async Task<bool> InsertCustomer(Customer customer)
         {
-            bool isNew = !registeredCustomerIds.Contains(customer.ID);
-            string requestUri = isNew ? $"http://{baseServiceUrl}/customers/" :
-                $"http://{baseServiceUrl}/customers/{customer.ID}";
+            if (registeredCustomerIds.Contains(customer.ID))
+                return false;
+
+            string requestUri = $"http://{baseServiceUrl}/customers/";
 
             string customerJson = JsonConvert.SerializeObject(customer);
             StringContent content = new StringContent(customerJson, Encoding.UTF8, "application/json");
@@ -94,10 +96,30 @@ namespace XTraining.Services
             HttpResponseMessage response = null;
             try
             {
-                if (isNew)
-                    response = await client.PostAsync(requestUri, content);
-                else
-                    response = await client.PutAsync(requestUri, content);
+                response = await client.PostAsync(requestUri, content);
+            }
+            catch
+            {
+                return false;
+            }
+
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> UpdateCustomer(Customer customer)
+        {
+            if (!registeredCustomerIds.Contains(customer.ID))
+                return false;
+
+            string requestUri = $"http://{baseServiceUrl}/customers/{customer.ID}";
+
+            string customerJson = JsonConvert.SerializeObject(customer);
+            StringContent content = new StringContent(customerJson, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = null;
+            try
+            {
+                response = await client.PutAsync(requestUri, content);
             }
             catch
             {

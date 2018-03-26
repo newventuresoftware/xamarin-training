@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 using Xamarin.Forms;
 using XTraining.Models;
 
@@ -10,41 +11,57 @@ namespace XTraining.PageModels
         {
             this.northwindService = northwindService;
             this.saveCommand = new Command(OnSave);
+            this.cancelCommand = new Command(OnCancel);
         }
 
-        private Customer originalCustomer, customer;
-        private Command saveCommand;
+        private Customer originalCustomer, draftCustomer;
+        private Command saveCommand, cancelCommand;
         private Services.INorthwindService northwindService;
 
-        public Customer SelectedCustomer
+        public Customer DraftCustomer
         {
-            get => this.customer;
+            get => this.draftCustomer;
             set
             {
-                if (this.customer == value)
+                if (this.draftCustomer == value)
                     return;
 
-                this.customer = value;
+                this.draftCustomer = value;
                 RaisePropertyChanged();
             }
         }
 
         public ICommand SaveCommand => this.saveCommand;
+        public ICommand CancelCommand => this.cancelCommand;
 
         public override void Init(object initData)
         {
             originalCustomer = (Customer)initData;
-            SelectedCustomer = originalCustomer.Clone();
+            DraftCustomer = originalCustomer.Clone();
         }
 
         private async void OnSave(object obj)
         {
-            if (SelectedCustomer.Equals(originalCustomer))
+            Customer draftCustomer = this.DraftCustomer;
+            if (draftCustomer.Equals(originalCustomer))
                 return;
 
-            bool result = await this.northwindService.UpdateCustomer(SelectedCustomer);
+            bool result = await this.northwindService.UpdateCustomer(draftCustomer);
+
+            if (result)
+            {
+                originalCustomer.CopyFrom(draftCustomer);
+            }
+
             string resultStr = result ? "successfully" : "unsuccessfully";
             await CoreMethods.DisplayAlert("Customer Update", $"Customer updated {resultStr}", "OK");
+
+            await this.CoreMethods.PopPageModel(true);
+        }
+
+        private void OnCancel(object obj)
+        {
+            this.CoreMethods.PopPageModel(true);
         }
     }
 }

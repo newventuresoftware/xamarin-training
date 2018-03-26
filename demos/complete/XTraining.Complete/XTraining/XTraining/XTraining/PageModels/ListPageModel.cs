@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -15,14 +16,14 @@ namespace XTraining.PageModels
             this.deleteCommand = new Command<Customer>(DeleteCustomer);
         }
 
-        private IList<Customer> customers;
+        private ObservableCollection<Customer> customers;
         private Customer selectedCustomer;
         private Services.INorthwindService northwindService;
         private Command<Customer> deleteCommand;
 
         public ICommand DeleteCommand => deleteCommand;
 
-        public IList<Customer> Customers
+        public ObservableCollection<Customer> Customers
         {
             get => this.customers;
             private set
@@ -55,7 +56,7 @@ namespace XTraining.PageModels
 
             if (Customers == null)
             {
-                Customers = await northwindService.GetCustomersAsync();
+                Customers = new ObservableCollection<Customer>(await northwindService.GetCustomersAsync());
             }
         }
 
@@ -65,7 +66,7 @@ namespace XTraining.PageModels
                 return;
 
             this.SelectedCustomer = null;
-            CoreMethods.PushPageModel<CustomerDetailsPageModel>(customer, false, true);
+            CoreMethods.PushPageModel<CustomerDetailsPageModel>(customer, true, true);
         }
 
         private async void DeleteCustomer(Customer customer)
@@ -73,6 +74,11 @@ namespace XTraining.PageModels
             bool result = await this.northwindService.DeleteCustomer(customer);
             string resultStr = result ? "successfully" : "unsuccessfully";
             await CoreMethods.DisplayAlert("Customer Update", $"Customer updated {resultStr}", "OK");
+
+            if (result)
+            {
+                this.customers.Remove(customer);
+            }
         }
     }
 }

@@ -1,42 +1,51 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Telerik.XamarinForms.Common.DataAnnotations;
 
 namespace XTraining.Models
 {
-    public class Customer
+    public class Customer : INotifyPropertyChanged
     {
+        private string _address, _city, _companyName, _contactName, _contactTitle,
+            _country, _id, _fax, _phone, _postalCode, _region;
+
         [DisplayOptions(Header = "Address")]
-        public string Address { get; set; }
+        public string Address { get => _address; set => SetValue(ref _address, value); }
 
         [DisplayOptions(Header = "City")]
-        public string City { get; set; }
+        public string City { get => _city; set => SetValue(ref _city, value); }
 
         [DisplayOptions(Header = "Company name")]
-        public string CompanyName { get; set; }
+        [NonEmptyValidator]
+        public string CompanyName { get => _companyName; set => SetValue(ref _companyName, value); }
 
         [DisplayOptions(Header = "Contact name")]
-        public string ContactName { get; set; }
+        public string ContactName { get => _contactName; set => SetValue(ref _contactName, value); }
 
         [DisplayOptions(Header = "Contact title")]
-        public string ContactTitle { get; set; }
+        public string ContactTitle { get => _contactTitle; set => SetValue(ref _contactTitle, value); }
 
         [DisplayOptions(Header = "Country")]
-        public string Country { get; set; }
+        public string Country { get => _country; set => SetValue(ref _country, value); }
 
         [DisplayOptions(Header = "Customer ID")]
-        public string ID { get; set; }
+        [StringLengthValidator(5, 5)]
+        public string ID { get => _id; set => SetValue(ref _id, value); }
 
         [DisplayOptions(Header = "Fax")]
-        public string Fax { get; set; }
+        public string Fax { get => _fax; set => SetValue(ref _fax, value); }
 
         [DisplayOptions(Header = "Phone")]
-        public string Phone { get; set; }
+        public string Phone { get => _phone; set => SetValue(ref _phone, value); }
 
         [DisplayOptions(Header = "PO Code")]
-        public string PostalCode { get; set; }
+        public string PostalCode { get => _postalCode; set => SetValue(ref _postalCode, value); }
 
         [DisplayOptions(Header = "Region")]
-        public string Region { get; set; }
+        public string Region { get => _region; set => SetValue(ref _region, value); }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public Customer Clone()
         {
@@ -54,6 +63,21 @@ namespace XTraining.Models
                 PostalCode = this.PostalCode,
                 Region = this.Region,
             };
+        }
+
+        public void CopyFrom(Customer other)
+        {
+            Address = other.Address;
+            City = other.City;
+            CompanyName = other.CompanyName;
+            ContactName = other.ContactName;
+            ContactTitle = other.ContactTitle;
+            Country = other.Country;
+            ID = other.ID;
+            Fax = other.Fax;
+            Phone = other.Phone;
+            PostalCode = other.PostalCode;
+            Region = other.Region;
         }
 
         public override bool Equals(object obj)
@@ -88,6 +112,16 @@ namespace XTraining.Models
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(PostalCode);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Region);
             return hashCode;
+        }
+
+        private bool SetValue<T>(ref T storage, T value, [CallerMemberName] string propertyName = "")
+        {
+            if (object.Equals(storage, value))
+                return false;
+
+            storage = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            return true;
         }
     }
 }
