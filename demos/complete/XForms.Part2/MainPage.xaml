@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XForms.MainPage"
-             xmlns:pageModels="clr-namespace:XForms.PageModels"
-             Title="XForms">
+             xmlns:pageModels="clr-namespace:XForms"
+             x:Class="XForms.MainPage">
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Color creator" Clicked="MenuItemClick"
-                    StyleId="{x:Static pageModels:MainPageModel.ColorPage}" />
+                    StyleId="{x:Static pageModels:MainPage.ColorPage}" />
             <Button Text="Dialer" Clicked="MenuItemClick"
-                    StyleId="{x:Static pageModels:MainPageModel.DialerPage}" />
+                    StyleId="{x:Static pageModels:MainPage.DialerPage}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
