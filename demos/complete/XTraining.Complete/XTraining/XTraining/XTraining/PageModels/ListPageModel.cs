@@ -44,8 +44,8 @@ namespace XTraining.PageModels
                     return;
 
                 this.selectedCustomer = value;
-                OnSelectedCustomerChanged(value);
                 RaisePropertyChanged();
+                OnSelectedCustomerChanged(value);
             }
         }
 
@@ -61,7 +61,11 @@ namespace XTraining.PageModels
 
         private void OnSelectedCustomerChanged(Customer customer)
         {
+            if (customer == null)
+                return;
 
+            this.SelectedCustomer = null;
+            CoreMethods.PushPageModel<CustomerDetailsPageModel>(customer, false, true);
         }
 
         private void DeleteCustomer(Customer customer)

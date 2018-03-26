@@ -22,7 +22,7 @@ namespace XTraining.Services
         }
 
         private HttpClient client;
-        private static string baseServiceUrl = "192.168.1.104:3000";
+        private static string baseServiceUrl = "192.168.2.21:3000";
 
         public async Task<IList<Models.Customer>> GetCustomersAsync(int? limit = null)
         {
