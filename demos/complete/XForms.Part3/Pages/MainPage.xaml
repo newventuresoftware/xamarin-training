@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Pages.MainPage"
-             xmlns:pageModels="clr-namespace:XForms.PageModels"
+             xmlns:pages="clr-namespace:XForms.Pages"
              Title="XForms">
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Color creator" Clicked="MenuItemClick"
-                    StyleId="{x:Static pageModels:MainPageModel.ColorPage}" />
+                    StyleId="{x:Static pages:MainPage.ColorPage}" />
             <Button Text="Dialer" Clicked="MenuItemClick"
-                    StyleId="{x:Static pageModels:MainPageModel.DialerPage}" />
+                    StyleId="{x:Static pages:MainPage.DialerPage}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

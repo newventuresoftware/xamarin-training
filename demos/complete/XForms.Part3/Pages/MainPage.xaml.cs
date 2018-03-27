@@ -25,7 +25,7 @@ namespace XForms.Pages
             }
             else if (btn.StyleId == DialerPage)
             {
-                nextPage = new DialPage();
+                nextPage = FreshMvvm.FreshPageModelResolver.ResolvePageModel<PageModels.DialPageModel>();
             }
 
             if (nextPage != null)
