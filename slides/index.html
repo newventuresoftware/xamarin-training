@@ -157,7 +157,7 @@
                     <aside class="notes">
                             <h2>New Venture Software</h2>
                             <p>
-                                A premium consulting and professional services partner for Progress Telerik products and technologies, who’s been instrumental in building the award-winning DevCraft suite.
+                                A premium consulting and professional services partner for Progress Telerik products and technologies.
                             </p>
                         </aside>
                 </section>
@@ -222,6 +222,10 @@
                             <li>Google removed standalone SDK manager and integrated it into Android Stuido</li>
                             <li>Xamarin introduced their own SDK manager</li>
                             <li>The best one yet is Android Studio</li>
+                            <li>Android SDK is important. Its preferable not to install it somewhere hidden using VS installer.</li>
+                            <li>Good idea to install the android sdk using Android Studio.</li>
+                            <li>SDK can get quite big - install it in a place with room to spare</li>
+                            <li>Good idea to create a hello world native android app using Android Studio to check if everything is ok with android tools.</li>
                         </ul>
                     </aside>
                 </section>
@@ -233,7 +237,10 @@
                     <img alt="" class="no-border fragment" height="300" data-fragment-index="2" src="./img/android_simulator.png" />
                     <aside class="notes">
                         <ul>
-                            <li></li>
+                            <li>Genymotion is a commercial product</li>
+                            <li>VS Emulator uses Hyper-V</li>
+                            <li>Android Studio Emulator is the best</li>
+                            <li>Any emulator is good for xamarin</li>
                         </ul>
                     </aside>
                 </section>
@@ -1156,6 +1163,13 @@ public Task&lt;int&gt; DeleteItemAsync(TodoItem item)
                     <li class="fragment">Xamarin Documentation</li>
                     <li class="fragment">Telerik UI for Xamarin Documentation</li>
                 </ul>
+                <aside class="notes">
+                	<ul>
+                		<li>In the <b>Color creator</b>, replace sliders with a <code>Stepper</code>, <code>Entry</code>, <code>RadNumericInput</code></li>
+                		<li>In the <b>Dialer</b>, try to switch to Android runtime permissions. Nuget <code>Plugin.Permissions</code></li>
+                		<li>In the <b>XTraining ListPage</b>, try to add a command for adding new <code>Customer</code>s</li>
+                	</ul>
+                </aside>
             </section>
             <section id="questions">
                 <h3>Questions?</h3>
@@ -1213,7 +1227,7 @@ public Task&lt;int&gt; DeleteItemAsync(TodoItem item)
             { src: 'plugin/notes/notes.js', async: true },
             { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
             ],
-            slideNumber: 'c/t'
+            slideNumber: false
          });
      </script>
  </body>
