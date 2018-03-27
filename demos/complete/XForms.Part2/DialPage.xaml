@@ -9,15 +9,11 @@
                 <Setter Property="FontFamily" Value="monospace" />
                 <Setter Property="FontSize" Value="Medium" />
             </Style>
-            <Style x:Key="dialButtonStyle" TargetType="Button" BasedOn="{StaticResource baseButtonStyle}">
-                <Setter Property="BackgroundColor" Value="Green" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="Text" Value="Call" />
-            </Style>
+
             <Style x:Key="backspaceButtonStyle" TargetType="Button" BasedOn="{StaticResource baseButtonStyle}">
                 <Setter Property="BackgroundColor" Value="Transparent" />
-                <Setter Property="Text" Value="&#x232B;" />
             </Style>
+
             <Style TargetType="Button" BasedOn="{StaticResource baseButtonStyle}">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="BackgroundColor" Value="DarkGray" />
@@ -26,7 +22,7 @@
     </ContentPage.Resources>
 
     <Grid>
-        <Grid.RowDefinitions>
+        <Grid.RowDefinitions> <!--6 rows: 1 for text, 4 for keys, 1 for Call-->
             <RowDefinition Height="2*" />
             <RowDefinition />
             <RowDefinition />
@@ -34,7 +30,7 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions> <!--3 columns-->
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
@@ -44,7 +40,7 @@
             <Grid>
                 <Label x:Name="numberLabel" Margin="80,0" HorizontalOptions="Center" VerticalOptions="Center"
                        FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
-                <Button HorizontalOptions="End" VerticalOptions="Center"
+                <Button HorizontalOptions="End" VerticalOptions="Center" Text="&#x232B;"
                         Style="{StaticResource backspaceButtonStyle}" Clicked="OnBackspaceClick" />
             </Grid>
         </Frame>
@@ -65,7 +61,8 @@
         <Button Grid.Row="4" Grid.Column="1" Text="0" Clicked="OnNumberClick" />
         <Button Grid.Row="4" Grid.Column="2" Text="#" Clicked="OnNumberClick" />
 
-        <Button Grid.Row="5" Grid.ColumnSpan="3" Style="{StaticResource dialButtonStyle}" Clicked="OnCallClick"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="3" Clicked="OnCallClick"
+                BackgroundColor="Green" TextColor="White" Text="Call" />
     </Grid>
     
 </ContentPage>
