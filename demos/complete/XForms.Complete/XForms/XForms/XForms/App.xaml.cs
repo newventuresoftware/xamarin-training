@@ -13,7 +13,7 @@ namespace XForms
 		{
 			InitializeComponent();
 
-            MainPage = new FreshMvvm.FreshNavigationContainer(FreshMvvm.FreshPageModelResolver.ResolvePageModel<PageModels.MainPageModel>());
+            MainPage = new NavigationPage(new Pages.MainPage());
         }
 
 		protected override void OnStart ()
