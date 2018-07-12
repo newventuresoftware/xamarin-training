@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using Telerik.XamarinForms.Common.DataAnnotations;
+//using Telerik.XamarinForms.Common.DataAnnotations;
 
 namespace XTraining.Models
 {
@@ -10,39 +10,39 @@ namespace XTraining.Models
         private string _address, _city, _companyName, _contactName, _contactTitle,
             _country, _id, _fax, _phone, _postalCode, _region;
 
-        [DisplayOptions(Header = "Address")]
+        //[DisplayOptions(Header = "Address")]
         public string Address { get => _address; set => SetValue(ref _address, value); }
 
-        [DisplayOptions(Header = "City")]
+        //[DisplayOptions(Header = "City")]
         public string City { get => _city; set => SetValue(ref _city, value); }
 
-        [DisplayOptions(Header = "Company name")]
-        [NonEmptyValidator]
+        //[DisplayOptions(Header = "Company name")]
+        //[NonEmptyValidator]
         public string CompanyName { get => _companyName; set => SetValue(ref _companyName, value); }
 
-        [DisplayOptions(Header = "Contact name")]
+        //[DisplayOptions(Header = "Contact name")]
         public string ContactName { get => _contactName; set => SetValue(ref _contactName, value); }
 
-        [DisplayOptions(Header = "Contact title")]
+        //[DisplayOptions(Header = "Contact title")]
         public string ContactTitle { get => _contactTitle; set => SetValue(ref _contactTitle, value); }
 
-        [DisplayOptions(Header = "Country")]
+        //[DisplayOptions(Header = "Country")]
         public string Country { get => _country; set => SetValue(ref _country, value); }
 
-        [DisplayOptions(Header = "Customer ID")]
-        [StringLengthValidator(5, 5)]
+        //[DisplayOptions(Header = "Customer ID")]
+        //[StringLengthValidator(5, 5)]
         public string ID { get => _id; set => SetValue(ref _id, value); }
 
-        [DisplayOptions(Header = "Fax")]
+        //[DisplayOptions(Header = "Fax")]
         public string Fax { get => _fax; set => SetValue(ref _fax, value); }
 
-        [DisplayOptions(Header = "Phone")]
+        //[DisplayOptions(Header = "Phone")]
         public string Phone { get => _phone; set => SetValue(ref _phone, value); }
 
-        [DisplayOptions(Header = "PO Code")]
+        //[DisplayOptions(Header = "PO Code")]
         public string PostalCode { get => _postalCode; set => SetValue(ref _postalCode, value); }
 
-        [DisplayOptions(Header = "Region")]
+        //[DisplayOptions(Header = "Region")]
         public string Region { get => _region; set => SetValue(ref _region, value); }
 
         public event PropertyChangedEventHandler PropertyChanged;

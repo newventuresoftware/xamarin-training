@@ -1,15 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
-             x:Class="XTraining.Pages.CustomerDetailsPage"
-             Title="{Binding Path=DraftCustomer.ID}">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Save" Command="{Binding SaveCommand}" />
-        <ToolbarItem Text="Cancel" Command="{Binding CancelCommand}" />
-    </ContentPage.ToolbarItems>
-    
+             x:Class="XTraining.Pages.CustomerDetailsPage" Title="Customer Details">
     <ContentPage.Content>
-        <telerikInput:RadDataForm Source="{Binding DraftCustomer}" />
+        <!--TODO: Add Content-->
     </ContentPage.Content>
 </ContentPage>

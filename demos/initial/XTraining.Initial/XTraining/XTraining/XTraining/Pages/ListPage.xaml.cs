@@ -3,7 +3,7 @@ using Xamarin.Forms.Xaml;
 
 namespace XTraining.Pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListPage : ContentPage
 	{
 		public ListPage ()

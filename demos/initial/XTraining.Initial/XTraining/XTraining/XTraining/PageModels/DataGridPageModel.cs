@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using XTraining.Models;
 
 namespace XTraining.PageModels
 {
@@ -14,11 +11,6 @@ namespace XTraining.PageModels
 
         private Services.INorthwindService northwindService;
 
-        public override void Init(object initData)
-        {
-            base.Init(initData);
-
-            // TODO: Get Orders from Northwind
-        }
+        // TODO: Add content
     }
 }
