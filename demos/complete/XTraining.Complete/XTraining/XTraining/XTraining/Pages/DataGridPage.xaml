@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XTraining.Pages.DataGridPage"
-             Title="DataGrid">
+             x:Class="XTraining.Pages.DataGridPage" Title="DataGrid">
     <ContentPage.Content>
         <telerikGrid:RadDataGrid ItemsSource="{Binding Orders}" AutoGenerateColumns="False" >
             <telerikGrid:RadDataGrid.Columns>

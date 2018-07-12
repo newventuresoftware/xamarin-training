@@ -3,19 +3,20 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7C06BC4-0886-4492-B035-03D5C4EEE5F3}</ProjectGuid>
+    <ProjectGuid>{2D1EBFC6-91DF-4FA1-B4EB-0659A0E69DB7}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>XTraining.Droid</RootNamespace>
     <AssemblyName>XTraining.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -45,65 +46,20 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.Xamarin.Android.Chart">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Chart.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Common">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Data">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Feedback">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Feedback.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Gauges">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Gauges.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Input">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.List">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.List.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.Android.Primitives">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.Xamarin.Android.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Chart">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.Chart.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Common">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControls">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.DataControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataGrid">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.DataGrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataVisualization">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.DataVisualization.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Input">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Primitives">
-      <HintPath>..\..\..\..\..\lib\Android\Telerik.XamarinForms.Primitives.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Android.Support.v8.RenderScript">
+    <PackageReference Include="Telerik.UI.for.Xamarin">
+      <Version>2018.2.620.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView">
       <Version>27.0.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="25.4.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.4.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="25.4.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
-    <PackageReference Include="SkiaSharp" Version="1.59.2" />
-    <PackageReference Include="SkiaSharp.Views " Version="1.59.2" />
-    <PackageReference Include="SkiaSharp.Views.Forms " Version="1.59.2" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -113,26 +69,36 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
-    <AndroidResource Include="Resources\values\styles.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XTraining\XTraining.csproj">
-      <Project>{EB2E99F5-9B3F-4170-845F-85B1CB059B35}</Project>
+      <Project>{075BCC75-99E1-4B3E-9B27-CCDA18FB5E1F}</Project>
       <Name>XTraining</Name>
     </ProjectReference>
   </ItemGroup>

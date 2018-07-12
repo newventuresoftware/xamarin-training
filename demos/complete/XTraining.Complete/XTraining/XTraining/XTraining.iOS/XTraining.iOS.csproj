@@ -5,8 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{76328274-3BA2-454C-A2E6-E62EED8BC7F3}</ProjectGuid>
+    <ProjectGuid>{159A51DA-8EF8-4D1D-838A-454E44CD56D7}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>XTraining.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
@@ -95,69 +96,66 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Default-Portrait.png" />
-    <BundleResource Include="Resources\Default-Portrait%402x.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default%402x.png" />
-    <BundleResource Include="Resources\Icon-60%402x.png" />
-    <BundleResource Include="Resources\Icon-60%403x.png" />
-    <BundleResource Include="Resources\Icon-76.png" />
-    <BundleResource Include="Resources\Icon-76%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-40.png" />
-    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-40%403x.png" />
-    <BundleResource Include="Resources\Icon-Small.png" />
-    <BundleResource Include="Resources\Icon-Small%402x.png" />
-    <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Telerik.Documents.SpreadsheetStreaming">
-      <HintPath>..\..\..\..\..\lib\Portable\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Zip">
-      <HintPath>..\..\..\..\..\lib\Portable\Telerik.Zip.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Xamarin.iOS">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.Xamarin.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Chart">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.Chart.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Common">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControls">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.DataControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataVisualization">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.DataVisualization.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Input">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Primitives">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.SkiaSharp">
-      <HintPath>..\..\..\..\..\lib\iOS\Telerik.XamarinForms.SkiaSharp.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
-    <PackageReference Include="SkiaSharp" Version="1.59.2" />
-    <PackageReference Include="SkiaSharp.Views " Version="1.59.2" />
-    <PackageReference Include="SkiaSharp.Views.Forms " Version="1.59.2" />
+    <PackageReference Include="Telerik.UI.for.Xamarin">
+      <Version>2018.2.620.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\XTraining\XTraining.csproj">
-      <Project>{EB2E99F5-9B3F-4170-845F-85B1CB059B35}</Project>
+      <Project>{075BCC75-99E1-4B3E-9B27-CCDA18FB5E1F}</Project>
       <Name>XTraining</Name>
     </ProjectReference>
   </ItemGroup>
