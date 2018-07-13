@@ -10,7 +10,7 @@ namespace XForms.Droid
     {
         public bool Dial(string number)
         {
-            var context = MainActivity.Instance;
+            var context = Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity;
             if (context == null)
                 return false;
 
