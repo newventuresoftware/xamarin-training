@@ -9,6 +9,6 @@
   "author": "Yavor Ivanov",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.12.1"
+    "json-server": "^0.16.3"
   }
 }
