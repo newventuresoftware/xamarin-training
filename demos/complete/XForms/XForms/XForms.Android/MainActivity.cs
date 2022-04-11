@@ -18,8 +18,7 @@ namespace XForms.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
-
+            global::Xamarin.Essentials.Platform.Init(this, bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FreshMvvm" Version="2.2.4" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="Telerik.UI.for.Xamarin" Version="2018.2.620.2" />
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+    <PackageReference Include="FreshMvvm" Version="4.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Telerik.UI.for.Xamarin" Version="2022.1.331.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
   </ItemGroup>
 </Project>
